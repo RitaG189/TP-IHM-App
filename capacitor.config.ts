@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'TP',
+  appId: 'pt.ihm.trabalho',
+  appName: 'TugaKidsClothes',
   webDir: 'www',
   bundledWebRuntime: false
 };

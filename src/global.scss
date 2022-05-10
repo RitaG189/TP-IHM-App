@@ -26,6 +26,11 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
+/** FONTS **/
+
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 /** COLORS **/
 
 .ion-color-pastelbeige {
@@ -45,3 +50,15 @@
 	--ion-color-shade: var(--ion-color-brown-shade);
 	--ion-color-tint: var(--ion-color-brown-tint);
 }
+
+.searchbar-input.sc-ion-searchbar-md {
+	border-radius: 10px;
+	background-position: left 8px center;
+	height: auto;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #7f8490;
+	background-color: white;
+	-webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+	box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+  }
