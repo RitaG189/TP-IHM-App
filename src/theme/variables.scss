@@ -75,6 +75,25 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
+  /** pastel beige **/
+
+	--ion-color-pastelbeige: #F4ECE4;
+	--ion-color-pastelbeige-rgb: 244,236,228;
+	--ion-color-pastelbeige-contrast: #000000;
+	--ion-color-pastelbeige-contrast-rgb: 0,0,0;
+	--ion-color-pastelbeige-shade: #d7d0c9;
+	--ion-color-pastelbeige-tint: #f5eee7;
+
+
+  /** brown **/
+
+  --ion-color-brown: #836A5B;
+	--ion-color-brown-rgb: 131,106,91;
+	--ion-color-brown-contrast: #ffffff;
+	--ion-color-brown-contrast-rgb: 255,255,255;
+	--ion-color-brown-shade: #735d50;
+	--ion-color-brown-tint: #8f796b;
+
 }
 
 @media (prefers-color-scheme: dark) {

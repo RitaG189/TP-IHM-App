@@ -28,3 +28,20 @@
 
 /** COLORS **/
 
+.ion-color-pastelbeige {
+	--ion-color-base: var(--ion-color-pastelbeige);
+	--ion-color-base-rgb: var(--ion-color-pastelbeige-rgb);
+	--ion-color-contrast: var(--ion-color-pastelbeige-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-pastelbeige-contrast-rgb);
+	--ion-color-shade: var(--ion-color-pastelbeige-shade);
+	--ion-color-tint: var(--ion-color-pastelbeige-tint);
+}
+
+.ion-color-brown {
+	--ion-color-base: var(--ion-color-brown);
+	--ion-color-base-rgb: var(--ion-color-brown-rgb);
+	--ion-color-contrast: var(--ion-color-brown-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-brown-contrast-rgb);
+	--ion-color-shade: var(--ion-color-brown-shade);
+	--ion-color-tint: var(--ion-color-brown-tint);
+}
