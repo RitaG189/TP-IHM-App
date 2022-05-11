@@ -1,36 +1,64 @@
+// header
+
 .header {
     --ion-background-color: #F4ECE4;
 }
 
 
 .search {
-    margin-left:18%;
+    left: 5%;
+	margin-top: 4%;
+	width: 145pt;
 }
 
 ion-toolbar {
-    height: 56pt;
+    height: 115%;
     
 }
 
 
 .logo {
-    margin-top: 3pt;
-    margin-left: 10pt;
+    margin-top: 2%;
+    margin-left: 4%;
     
 }
 
+  // content
 
-.searchbar-input.sc-ion-searchbar-md {
+.big-card {
+	
+	width: 90%;
+	height: 120%;
+	margin: auto;
+	margin-top: 20%;
+}
+
+.homecontent {
+    background-repeat:no-repeat;
+    background-size:50% 90%;
+}
+  
+
+.big-image {
+	text-align: center;
+    max-width: 90%;
+    height: auto;
+    width: auto; /* ie8 */
 	border-radius: 10pt;
-	background-position: right 8px center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
 
-	height: auto;	
-	width: 145pt;
-	font-size: 1.1rem;
-	font-weight: 400;
-	color: #A6A3A3;
-	background-color: white;
-	-webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
-	box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
-	font-family: 'Nunito', sans-serif;
-  }
+.image {
+	text-align: center;
+    max-width: 90%;
+    height: auto;
+    width: auto; /* ie8 */
+	border-radius: 10pt;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}

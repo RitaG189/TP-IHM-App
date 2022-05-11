@@ -8,3 +8,7 @@ ion-icon {
     height: 23pt;
     width: 23pt;
 }
+
+ion-tab-button[aria-selected=true] {
+    color: rgb(46, 41, 31);
+ }
