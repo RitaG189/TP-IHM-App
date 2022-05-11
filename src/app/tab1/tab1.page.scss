@@ -4,7 +4,7 @@
 
 
 .search {
-    margin-right: 25pt;
+    margin-left:18%;
 }
 
 ion-toolbar {
@@ -18,3 +18,19 @@ ion-toolbar {
     margin-left: 10pt;
     
 }
+
+
+.searchbar-input.sc-ion-searchbar-md {
+	border-radius: 10pt;
+	background-position: right 8px center;
+
+	height: auto;	
+	width: 145pt;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #A6A3A3;
+	background-color: white;
+	-webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
+	font-family: 'Nunito', sans-serif;
+  }
