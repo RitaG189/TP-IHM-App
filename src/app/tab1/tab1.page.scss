@@ -1,18 +1,18 @@
 // header
 
-.header {
-    --ion-background-color: #F4ECE4;
-}
-
 
 .search {
     left: 5%;
 	margin-top: 4%;
-	width: 145pt;
+	width: 150pt;
 }
 
-ion-toolbar {
-    height: 115%;
+.header {
+	//height: 2%;
+}
+
+.toolbar {
+    height: 60pt;
     
 }
 
@@ -23,42 +23,88 @@ ion-toolbar {
     
 }
 
-  // content
+// content
 
-.big-card {
-	
-	width: 90%;
-	height: 120%;
-	margin: auto;
-	margin-top: 20%;
-}
 
 .homecontent {
     background-repeat:no-repeat;
     background-size:50% 90%;
 }
-  
+
 
 .big-image {
 	text-align: center;
     max-width: 90%;
     height: auto;
     width: auto; /* ie8 */
-	border-radius: 10pt;
+	border-radius: 5pt;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 .image {
 	text-align: center;
-    max-width: 90%;
+    max-width: 86%;
     height: auto;
     width: auto; /* ie8 */
-	border-radius: 10pt;
+	border-radius: 5pt;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 }
+
+.values {
+	height: 42pt;
+	width: 42pt;
+	margin-left: 10%;
+}
+
+.values-title {
+	font-family: 'Solway', serif;
+	//font-weight: ;
+	font-size: 18pt;
+	text-align: center;
+	margin-top: 8%;
+	color: #363636;
+}
+
+.values-subtitle {
+	font-family: 'Solway', serif;
+	font-size: 14pt;
+	text-align: left;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: #363636;
+}
+
+.divider {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+ion-item {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 6%;
+	margin-right: 10%;
+	width: 80%;
+	
+}
+
+ion-label {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	width: 80%;
+}
+
+p {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+}
+

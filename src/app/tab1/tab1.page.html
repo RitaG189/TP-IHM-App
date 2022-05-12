@@ -1,39 +1,109 @@
 <ion-header [translucent]="true"  class="ion-no-border" >
-  <ion-toolbar color="pastelbeige">
-    <ion-img class="logo" src="assets/img/logo.png" style="height: 49pt;" slot="start"></ion-img>
 
-
-    <ion-searchbar placeholder="Pesquisar" class="search"></ion-searchbar>
-  </ion-toolbar>
+  <!--
+  <ion-toolbar class="header"></ion-toolbar>
+  -->
 
 
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
+  <ion-toolbar class="toolbar" color="pastelbeige">
+    <ion-img class="logo" src="assets/img/logo.png" style="height: 49pt;" slot="start"></ion-img>
+    <ion-searchbar placeholder="Pesquisar" class="search"></ion-searchbar>
+  </ion-toolbar>
+
   <img src="assets/img/baby-bath.jpg" class="big-image" />
 
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col size="6">
         <img src="assets/img/newborn.jpg" class="image" />
       </ion-col>
-      <ion-col>
-        <img src="assets/img/baby.jpg" class="image" />
+      <ion-col size="6">
+        <img src="assets/img/novidades.png" class="image" />
       </ion-col>
     </ion-row>
-  </ion-grid>
-    <!--
+    
     <ion-row>
       <ion-col size="6">
-        // Your Image
+        <img src="assets/img/baby.jpg" class="image" />
       </ion-col>
       <ion-col size="6">
-        // Your Image
+        <img src="assets/img/girl.png" class="image" />
       </ion-col>
     </ion-row>
   </ion-grid>
-    -->
+
+
+  <!-- divider -->
+  <ion-item-divider class="divider"></ion-item-divider>
+  
+  
+  <!-- list -->
+  <ion-list>
+
+    <!-- title -->
+    <h1 class="values-title">Os Nossos Valores</h1>
+
+    <ion-item lines="none">
+
+      <img src="assets/img/nature.png" class="values" />
+
+      <ion-label class="ion-text-wrap">
+        <h2 class="values-subtitle">Pureza</h2>
+        <p>
+          Orgânico, natural e livre de produtos químicos.
+        </p>
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item lines="none" style="margin-left: 3%;">
+
+      <img src="assets/img/fabric.png" class="values" />
+
+      <ion-label class="ion-text-wrap" style="margin-left: 14%;">
+        <h2 class="values-subtitle">Qualidade</h2>
+        <p>
+          Feito a partir dos melhores materiais. 
+        </p>
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item lines="none">
+
+      <img src="assets/img/planet.png" class="values" />
+
+      <ion-label class="ion-text-wrap">
+        <h2 class="values-subtitle">Utilidade</h2>
+        <p>
+          Produzimos apenas o essencial e necessário.
+        </p>
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item lines="none">
+  
+      <img src="assets/img/love.png" class="values" />
+      
+      <ion-label class="ion-text-wrap">
+        <h2 class="values-subtitle">Cuidado</h2>
+        <p>
+          Suave na pele e no mundo.
+        </p>
+      </ion-label>
+
+    </ion-item>
+
+
+
+
+  </ion-list>
+
 
 
 </ion-content>

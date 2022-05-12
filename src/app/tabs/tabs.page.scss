@@ -2,13 +2,18 @@
 ion-tab-bar {
     --ion-background-color: #F4ECE4;
     height: 8%;
+    //border-top-left-radius: 20px;
+    //border-top-right-radius: 20px;
+    
 }
 
 ion-icon {
     height: 23pt;
     width: 23pt;
+    
 }
 
 ion-tab-button[aria-selected=true] {
     color: rgb(46, 41, 31);
+
  }
