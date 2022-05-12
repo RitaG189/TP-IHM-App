@@ -1,0 +1,39 @@
+ion-title {
+    text-align: center;
+    font-family: 'Solway', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #363636;
+
+    margin-top: 7%;
+    margin-bottom: 7%;
+}   
+
+p {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+hr {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border-top: 4px solid #F4ECE4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+}
+
+ion-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+}
+
+ion-icon {
+    margin-right: 8px;
+}
