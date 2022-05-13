@@ -8,11 +8,11 @@ const routes: Routes = [
   },
   {
     path: 'novidades',
-    loadChildren: () => import('./novidades/novidades.module').then( m => m.NovidadesPageModule)
+    loadChildren: () => import('./categorias/novidades/novidades.module').then( m => m.NovidadesPageModule)
   },
   {
     path: 'promocoes',
-    loadChildren: () => import('./promocoes/promocoes.module').then( m => m.PromocoesPageModule)
+    loadChildren: () => import('./categorias/promocoes/promocoes.module').then( m => m.PromocoesPageModule)
   },
   
 

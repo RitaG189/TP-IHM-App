@@ -8,10 +8,6 @@ const routes: Routes = [
     path: '',
     component: PromocoesPage
   },
-  {
-    path: 'tab2',
-    loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-  },
 ];
 
 @NgModule({
