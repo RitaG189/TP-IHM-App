@@ -2,8 +2,7 @@ ion-title {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-family: 'Solway', serif;
-    font-weight: 700;
+    font-family: 'Solway-Bold' !important;
     font-size: 20pt;
     color: #363636;
 }
@@ -35,9 +34,8 @@ ion-list {
 
 h1 {
 
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito-Bold';
     font-size: 16px;
-    font-weight: 700;
     color:#363636;
     
 }
@@ -45,15 +43,12 @@ h1 {
 
 p {
     text-align: left;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito-Regular', sans-serif;
     font-size: 14px;
-    font-weight: 400;
     color: #363636;
 }
 
 h3 {
     text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
+    
 }
