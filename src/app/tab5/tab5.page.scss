@@ -1,0 +1,107 @@
+// header 
+
+.categorias {
+    text-align: left;
+    margin-top: 8%;
+    margin-left: 10%;
+
+    font-family: 'Solway-Bold';
+    font-size: 16pt;
+    color: #363636;
+}
+
+
+// content
+
+hr {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border-top: 4px solid #F4ECE4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+}
+
+.email {
+    // body
+    text-align: left;
+    margin-top: 8%;
+    margin-left: 18%;
+
+    // font
+    font-family: 'Nunito-Bold';
+    font-size: 12pt;
+    color: #363636;
+}
+
+.password {
+    // body
+    text-align: left;
+    margin-top: 8%;
+    margin-left: 18%;
+
+    // font
+    font-family: 'Nunito-Bold';
+    font-size: 12pt;
+    color: #363636;
+}
+
+.email-input {
+
+    // body
+    --background: #FFF7EF;
+    --border-color: #F3E8DE;
+    --border-width:10pt;
+    width: 75%;
+    border-radius: 10pt;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.password-input {
+
+    // body
+    --background: #FFF7EF;
+    --border-color: #F3E8DE;
+    --border-width:10pt;
+    width: 75%;
+    border-radius: 10pt;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forget-password {
+    
+    // body
+    text-align: right;
+    margin-top: 4%;
+    margin-right: 14%;
+
+    // font
+    font-family: 'Nunito-Regular';
+    font-size: 10pt;
+    color: #676767;
+    
+}
+
+.login-button {
+    
+    
+}
+
+.login {
+
+}
+
+.register-button {
+
+}
+
+.register {
+    
+}
