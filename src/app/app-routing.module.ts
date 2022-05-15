@@ -14,6 +14,8 @@ const routes: Routes = [
     path: 'promocoes',
     loadChildren: () => import('./categorias/promocoes/promocoes.module').then( m => m.PromocoesPageModule)
   },
+
+
   
 
 ];
