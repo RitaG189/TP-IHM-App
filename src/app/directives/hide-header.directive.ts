@@ -14,11 +14,11 @@ export class HideHeaderDirective {
   ngOnInit() {
     this.header = this.header.el
 
-    this.renderer.setStyle(this.header, "transition", "margin-top 300ms")
+    this.renderer.setStyle(this.header, "transition", "margin-top 200ms")
   }
 
   onContentScroll(event: any) {
-    if(event.detail.scrollTop > 100) {
+    if(event.detail.scrollTop > 20) {
       this.renderer.setStyle(this.header, "margin-top", `-${this.header.clientHeight}px`)
     }
     else {

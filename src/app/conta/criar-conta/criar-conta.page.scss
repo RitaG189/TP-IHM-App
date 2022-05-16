@@ -43,3 +43,29 @@ hr {
     margin-right: auto;
     font-family: 'Nunito-Bold';
 }
+
+.checkboxes {
+    // body
+    margin-top: 10px;
+    
+    margin-left: 8%;
+    
+}
+
+.checkbox-label {
+    margin-left: 5px;
+
+    // font
+    font-family: 'Nunito-Regular';
+    font-size: 10pt;
+    color: #363636;
+}
+
+.button {
+    // font
+    font-family: 'Nunito-SemiBold';
+    font-size: 10pt;
+    width: 40%;
+    --border-radius: 10pt;
+    margin-bottom: 10%;
+}
