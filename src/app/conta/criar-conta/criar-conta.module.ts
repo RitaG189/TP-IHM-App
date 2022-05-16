@@ -8,6 +8,8 @@ import { CriarContaPageRoutingModule } from './criar-conta-routing.module';
 
 import { CriarContaPage } from './criar-conta.page';
 
+import { HideHeaderDirective } from 'src/app/directives/hide-header.directive';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { CriarContaPage } from './criar-conta.page';
     IonicModule,
     CriarContaPageRoutingModule,
   ],
-  declarations: [CriarContaPage]
+  declarations: [CriarContaPage, HideHeaderDirective]
 })
 export class CriarContaPageModule {}
