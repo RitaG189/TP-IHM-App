@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: 'promocoes',
     loadChildren: () => import('./categorias/promocoes/promocoes.module').then( m => m.PromocoesPageModule)
+  },  {
+    path: 'criar-conta',
+    loadChildren: () => import('./conta/criar-conta/criar-conta.module').then( m => m.CriarContaPageModule)
   },
+
 
 
   

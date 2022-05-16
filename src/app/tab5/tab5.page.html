@@ -1,9 +1,9 @@
-<ion-header class="ion-no-border">
-    <ion-title class="categorias">Login</ion-title>
-</ion-header>
+
 
 
 <ion-content [fullscreen]="true">
+
+    <ion-title class="login">Login</ion-title>
 
     <hr/>
 
@@ -16,14 +16,19 @@
     <p class="forget-password">Esqueceste-te da password?</p>
 
 
-    <ion-button class="login-button">
-        <p class="login">Entrar</p>
-    </ion-button>
+    <div style="text-align: center;">
+        <ion-button class="button" color="lightgrey" style="margin-top: 5%;">
+            <p>Entrar</p>
+        </ion-button>
+    </div>
 
     <hr/>
 
-    <ion-button class="register-button">
-        <p class="login">Criar Conta</p> 
-    </ion-button>
+    <div style="text-align: center;">
+        <ion-button class="button" color="lightgrey" routerLink="/criar-conta" routerDirection="forward">
+            <p>Criar Conta</p> 
+        </ion-button>
+    </div>
+
 
 </ion-content>

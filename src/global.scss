@@ -80,6 +80,15 @@
 	--ion-color-tint: var(--ion-color-brown-tint);
 }
 
+.ion-color-lightgrey {
+	--ion-color-base: var(--ion-color-lightgrey);
+	--ion-color-base-rgb: var(--ion-color-lightgrey-rgb);
+	--ion-color-contrast: var(--ion-color-lightgrey-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-lightgrey-contrast-rgb);
+	--ion-color-shade: var(--ion-color-lightgrey-shade);
+	--ion-color-tint: var(--ion-color-lightgrey-tint);
+}
+
 .searchbar-input.sc-ion-searchbar-md {
 	border-radius: 10pt;
 	background-position: left 8px center;

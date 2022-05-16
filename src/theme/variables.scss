@@ -94,6 +94,15 @@
 	--ion-color-brown-shade: #735d50;
 	--ion-color-brown-tint: #8f796b;
 
+   /** light grey **/
+
+   --ion-color-lightgrey: #676767;
+   --ion-color-lightgrey-rgb: 103,103,103;
+   --ion-color-lightgrey-contrast: #ffffff;
+   --ion-color-lightgrey-contrast-rgb: 255,255,255;
+   --ion-color-lightgrey-shade: #5b5b5b;
+   --ion-color-lightgrey-tint: #767676;
+
 }
 
 @media (prefers-color-scheme: dark) {
