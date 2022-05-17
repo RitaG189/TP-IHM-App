@@ -41,18 +41,20 @@ hr {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+
+    // font
     font-family: 'Nunito-Bold';
 }
 
 .checkboxes {
     // body
     margin-top: 10px;
-    
     margin-left: 8%;
     
 }
 
 .checkbox-label {
+    // body
     margin-left: 5px;
 
     // font
@@ -62,10 +64,14 @@ hr {
 }
 
 .button {
+
+    // body
+    margin-bottom: 10%;
+    --ripple-color: transparent;
+    --border-radius: 10pt;
+
     // font
     font-family: 'Nunito-SemiBold';
     font-size: 10pt;
     width: 40%;
-    --border-radius: 10pt;
-    margin-bottom: 10%;
 }
