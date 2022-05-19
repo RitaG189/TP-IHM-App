@@ -3,6 +3,7 @@
     [
         {
             "id": "1",
+            "category": "",
             "image": ".../...",
             "price": "ionic",
             "color": "ionic"

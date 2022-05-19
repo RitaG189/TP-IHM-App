@@ -20,7 +20,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <hr/>
 
@@ -41,14 +41,36 @@
       <ion-card-content>
         <img src="./assets/img/clothes/bodysuit_navy.webp" />
 
-        <ion-title class="title">Casaco</ion-title>
+        <ion-title class="title">Bodysuit</ion-title>
         <ion-card-subtitle class="color">Azul</ion-card-subtitle>
         <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-  
         
       </ion-card-content>
     </ion-card>
   
+    <ion-card class="card">
+      <ion-card-content>
+        <img src="./assets/img/clothes/bodysuit_pink.webp" class="image" />
+
+        <ion-title class="title">Bodysuit</ion-title>
+        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
+        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
+  
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="card">
+  
+      <ion-card-content>
+        <img src="./assets/img/baby.png" class="image" />
+
+        <ion-title class="title">Casaco</ion-title>
+        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
+        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
+  
+      </ion-card-content>
+    </ion-card>
+
     <ion-card class="card">
       <ion-card-content>
         <img src="./assets/img/baby.png" class="image" />
@@ -61,7 +83,6 @@
     </ion-card>
 
     <ion-card class="card">
-  
       <ion-card-content>
         <img src="./assets/img/baby.png" class="image" />
 

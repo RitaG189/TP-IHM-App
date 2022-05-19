@@ -8,6 +8,8 @@ import { NovidadesPageRoutingModule } from './novidades-routing.module';
 
 import { NovidadesPage } from './novidades.page';
 
+import { HideHeaderDirective } from 'src/app/directives/hide-header.directive';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { NovidadesPage } from './novidades.page';
     IonicModule,
     NovidadesPageRoutingModule
   ],
-  declarations: [NovidadesPage]
+  declarations: [NovidadesPage, HideHeaderDirective]
 })
 export class NovidadesPageModule {}
