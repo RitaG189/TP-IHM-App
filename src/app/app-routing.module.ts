@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'bebe',
     loadChildren: () => import('./categorias/bebe/bebe.module').then( m => m.BebePageModule)
   },
+  {
+    path: 'conta',
+    loadChildren: () => import('./conta/conta/conta.module').then( m => m.ContaPageModule)
+  },
 
   
 
