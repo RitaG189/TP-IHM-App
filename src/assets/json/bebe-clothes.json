@@ -1,0 +1,12 @@
+{
+    "clothes": 
+    [
+        {
+            "id": "1",
+            "image": ".../...",
+            "price": "ionic",
+            "color": "ionic"
+        }
+
+    ]
+}

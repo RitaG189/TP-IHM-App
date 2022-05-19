@@ -1,8 +1,8 @@
 <ion-header class="ion-no-border">
 
-  <ion-item>
-    <ion-label class="cesto">Cesto</ion-label>
-    <ion-badge class="total-items" color="light"> 0 </ion-badge>
+  <ion-item lines="none">
+    <ion-label id="cesto">Cesto</ion-label>
+    <ion-badge id="total-items" color="light"> 0 </ion-badge>
   </ion-item>
 
  
@@ -14,10 +14,14 @@
 
   <hr/>
 
+  <img src="assets/icon/mad-bunny.png" id="bunny" />
 
-  <img src="assets/icon/mad-bunny.png" class="bunny" />
-  <h1 class="bunny-title">Ups! O cesto está vazio</h1>
-  <p class="bunny-text">Adiciona primeiro um item ao cesto para prosseguires com a compra</p>  
+  <div class="container">
+
+    <h1 id="bunny-title">Ups! O cesto está vazio</h1>
+    <p id="bunny-text">Adiciona primeiro um item ao cesto para prosseguires com a compra</p> 
+  </div>
+ 
 
 
 </ion-content>

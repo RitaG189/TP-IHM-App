@@ -38,7 +38,7 @@
     <ion-accordion-group>
 
         <ion-accordion value="colors">
-            <ion-button slot="header" class="header-button" color="pastelbeige">
+            <ion-button slot="header" class="header-button" color="pastelbeige" expand="block">
                 <ion-label>
                     <h1>
                         Recém-Nascido 
@@ -104,7 +104,7 @@
     <ion-accordion-group>
 
         <ion-accordion value="colors">
-            <ion-button slot="header" class="header-button" color="pastelbeige">
+            <ion-button slot="header" class="header-button" color="pastelbeige" expand="block" >
                 <ion-label>
                     <h1>
                         Bebé 
@@ -114,51 +114,51 @@
 
 
           <ion-list slot="content">
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('conjuntos')">
                 <p>Conjuntos | Macacões</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('camisolas')">
                 <p>Camisolas</p>
             </ion-item>
             
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('vestidos')">
                 <p>Vestidos | Saias</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('calcas')">
                 <p>Calças | Calções | Leggings</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('casacos')">
                 <p>Casacos</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('sapatos')">
                 <p>Sapatos</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('bodies')">
                 <p>Bodies | Babygrows</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('roupa-interior')">
                 <p>Roupa Interior</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('roupa-banho')">
                 <p>Roupa de Banho</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('acessórios')">
                 <p>Acessórios</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('pijamas')">
                 <p>Pijamas</p>
             </ion-item>
 
-            <ion-item lines="none">
+            <ion-item lines="none" (click)="goToCategoryBaby('tudo')">
                 <p style="font-weight: 700;">Ver Tudo</p>
             </ion-item>
 

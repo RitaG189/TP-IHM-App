@@ -1,6 +1,6 @@
 // header
 
-.cesto {
+#cesto {
     text-align: left;
     margin-top: 5%;
     margin-left: 10%;
@@ -10,7 +10,7 @@
     color: #363636;
 }
 
-.total-items {
+#total-items {
 
     text-align: left;
     margin-top: 5%;
@@ -33,12 +33,15 @@ hr {
 
 
 
-.bunny {
+#bunny {
+    display: block;
+    margin: auto;
     height: 18%;
     margin-top: 30%;    
+    
 }
 
-.bunny-title {
+#bunny-title {
     text-align: center;
     font-family: 'Nunito-Bold';
     font-size: 14pt;
@@ -46,7 +49,7 @@ hr {
     margin-top: 5%;
 }
 
-.bunny-text{
+#bunny-text{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -54,7 +57,13 @@ hr {
     font-size: 8pt;
     color: #363636;
     width: 60%;
-    margin-top: 5%;
+    margin-top: 2%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
