@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NovidadesPage implements OnInit {
 
-  constructor() { }
+  public dataProducts: any;
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit(): void {
+    fetch('./assets/data/recem-nascido.json')
+      .then(res => res.json())
+      .then(json => {
+        this.dataProducts = json;
+        console.log(this.dataProducts)
+      })
+      
+    
   }
 
 }

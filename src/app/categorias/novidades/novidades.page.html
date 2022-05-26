@@ -1,110 +1,56 @@
-<ion-header class="ion-no-border" #header>
-  <ion-toolbar>
 
-    <div item-content style="display: flex; justify-content: space-between; width: 100%">
-      <ion-buttons>
-        <ion-back-button text="" icon="chevron-back-outline" style="margin-left: 50%; "></ion-back-button>
-      </ion-buttons>
+<ion-content>
 
-        <ion-title id="novidades" style="margin-left: auto; margin-right: 14%;">
-          Novidades
-        </ion-title>
+  <div id="header">
 
+    <div id="header-title">
+      <button id="back-button" onclick="history.back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+  
+      <ion-title id="novidades" >
+        Novidades
+      </ion-title>
     </div>
 
-      <p>
-        Novas adições à nossa coleção.
-      </p>
-  
 
-  </ion-toolbar>
-</ion-header>
+    <p class="header-description">
+      Novas adições à nossa coleção.
+    </p>
 
-<ion-content scrollEvents="true" appHideHeader [header]="header">
+    <hr/>
 
-  <hr/>
-
-  <ion-buttons>
-    <ion-button>
-      <ion-icon name="funnel-outline"></ion-icon>
-      <p>Filtro</p>
-    </ion-button>
-    <ion-button>
-      <ion-icon name="filter-outline"></ion-icon>
-      <p>Ordenar</p>
-    </ion-button>
-  </ion-buttons>
+    <ion-buttons>
+      <ion-button>
+        <ion-icon name="funnel-outline"></ion-icon>
+        <p class="header-description">Filtro</p>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="filter-outline"></ion-icon>
+        <p class="header-description">Ordenar</p>
+      </ion-button>
+    </ion-buttons>
+  </div>
 
 
-  <div id="container">
-    <ion-card class="card">
-      <ion-card-content>
-        <img src="./assets/img/clothes/bodysuit_navy.webp" />
+  <div class="product">
 
-        <ion-title class="title">Bodysuit</ion-title>
-        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
-        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-        
-      </ion-card-content>
-    </ion-card>
-  
-    <ion-card class="card">
-      <ion-card-content>
-        <img src="./assets/img/clothes/bodysuit_pink.webp" class="image" />
+    <div *ngFor="let product of dataProducts | keyvalue" class="content-box" >
+      <ion-card>
+        <img src="{{ product.value.image }}" />
+      </ion-card>
+      
+      <div class="item-box">
+        <h3 class="item-name">{{ product.value.name }}</h3>
+        <p class="item-description">{{ product.value.color }}</p>
+        <p class="item-description">{{ product.value.price }} €</p>
+      </div>
+    </div>
 
-        <ion-title class="title">Bodysuit</ion-title>
-        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
-        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-  
-      </ion-card-content>
-    </ion-card>
 
-    <ion-card class="card">
-  
-      <ion-card-content>
-        <img src="./assets/img/baby.png" class="image" />
-
-        <ion-title class="title">Casaco</ion-title>
-        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
-        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-  
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card class="card">
-      <ion-card-content>
-        <img src="./assets/img/baby.png" class="image" />
-
-        <ion-title class="title">Casaco</ion-title>
-        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
-        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-  
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card class="card">
-      <ion-card-content>
-        <img src="./assets/img/baby.png" class="image" />
-
-        <ion-title class="title">Casaco</ion-title>
-        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
-        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-  
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card class="card">
-      <ion-card-content>
-        <img src="./assets/img/baby.png" class="image" />
-
-        <ion-title class="title">Casaco</ion-title>
-        <ion-card-subtitle class="color">Azul</ion-card-subtitle>
-        <ion-card-subtitle class="price">20.00€</ion-card-subtitle>
-  
-      </ion-card-content>
-    </ion-card>
   </div>
 
 
 
 </ion-content>
+
