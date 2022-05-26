@@ -12,14 +12,13 @@ export class NovidadesPage implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    fetch('./assets/data/recem-nascido.json')
+    fetch('./assets/data/clothes.json')
       .then(res => res.json())
       .then(json => {
         this.dataProducts = json;
-        console.log(this.dataProducts)
       })
       
-    
   }
 
+  
 }

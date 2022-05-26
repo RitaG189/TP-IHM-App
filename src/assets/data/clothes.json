@@ -1,0 +1,405 @@
+{
+    "body-pointelle-dark-green":
+    {
+        "id": "1",
+        "name": "Body Pointelle",
+        "color": "verde",
+        "price": "19.00",
+        "category": "body",
+        "image": "assets/img/clothes/body_pointelle_dark_green.webp",
+        "novo": "yes",
+        "promocao": "no", 
+        "age": "newborn&baby"
+    },
+
+    "cardigan-merino-brown":
+    {
+        "id": "2",
+        "name": "Cardigan de Merino",
+        "color": "castanho",
+        "price": "56.00",
+        "category": "cardigan",
+        "image": "assets/img/clothes/cardigan_merino_brown.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "baby"
+    },
+
+    "hoodie-blue":
+    {
+        "id": "3",
+        "name": "Hoodie de Algodão",
+        "color": "azul",
+        "price": "34.00",
+        "category": "hoodie",
+        "image": "assets/img/clothes/hoodie_blue.webp",
+        "novo": "no",
+        "promocao": "yes",
+        "age": "baby"
+    },
+
+    "overall-cotton-blue":
+    {
+        "id": "4",
+        "name": "Macacão de Algodão",
+        "color": "azul",
+        "price": "42.00",
+        "category": "overall",
+        "image": "assets/img/clothes/overall_cotton_blue.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "infant"
+    }, 
+
+    "pants-cotton-white":
+    {
+        "id": "5",
+        "name": "Calças de Algodão",
+        "color": "branco",
+        "price": "23.00",
+        "category": "calças",
+        "image": "assets/img/clothes/pants_cotton_white.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "newborn&baby"
+    },
+
+    "socks-merino-white":
+    {
+        "id": "6",
+        "name": "Meias de Merino",
+        "color": "branco",
+        "price": "14.00",
+        "category": "meias",
+        "image": "assets/img/clothes/socks_merino_white.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "baby"
+    },
+
+    "suit-nylon-red":
+    {
+        "id": "7",
+        "name": "Fato de Banho de Nylon",
+        "color": "vermelho",
+        "price": "21.00",
+        "category": "praia",
+        "image": "assets/img/clothes/suit_nylon_red.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "baby"
+    },
+
+    "tee-merino-blue":
+    {
+        "id": "8",
+        "name": "T-Shirt de Merino",
+        "color": "azul",
+        "price": "16.00",
+        "category": "camisola",
+        "image": "assets/img/clothes/tee_merino_blue.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "baby"  
+    },
+
+    "body-merino-blue": 
+    {
+        "id": "9",
+        "name": "Body de Merino",
+        "color": "azul",
+        "price": "19.00",
+        "category": "body",
+        "image": "assets/img/clothes/body_merino_azul.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "newborn&baby"
+    },
+
+    "body-merino-pink":
+    {
+        "id": "10",
+        "name": "Body de Merino",
+        "color": "rosa",
+        "price": "19.00",
+        "category": "body",
+        "image": "assets/img/clothes/body_merino_rosa.webp",
+        "novo": "no",
+        "promocao": "yes",
+        "age": "newborn&baby"
+    },
+    
+    "body-pointelle-green":
+    {
+        "id": "11",
+        "name": "Body Pointelle",
+        "color": "verde",
+        "price": "24.00",
+        "category": "body",
+        "image": "assets/img/clothes/body_pointelle_green.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "newborn&baby"
+    },
+
+    "body-pointelle-kimono-white":
+    {
+        "id": "12",
+        "name": "Body Kimono Pointelle",
+        "color": "branco",
+        "price": "30.00",
+        "category": "body",
+        "image": "assets/img/clothes/body_pointelle_kimono_white.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "newborn&baby"
+    },
+
+    "cotton-drawstring-pants-blue":
+    {
+        "id": "13",
+        "name": "Calças de Algodão com Cordão",
+        "color": "azul",
+        "price": "16.00",
+        "category": "calcas",
+        "image": "assets/img/clothes/cotton_drawstring_pants_blue.webp",
+        "novo": "no",
+        "promocao": "yes",
+        "age": "newborn&baby"
+    },
+
+    "knit-footed-pants-beige":
+    {
+        "id": "14",
+        "name": "Calças de Malha com Pé",
+        "color": "beige",
+        "price": "45.00",
+        "category": "calcas",
+        "image": "assets/img/clothes/knit_footed_pants_beige.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "newborn"
+    },
+
+    "stretch-grow-merino-grey":
+    {
+        "id": "15",
+        "name": "Stretch & Grow Merino",
+        "color": "cinzento",
+        "price": "35.00",
+        "category": "stretch & grow",
+        "image": "assets/img/clothes/stretch_grow_merino_grey.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "newborn&baby"
+    },
+
+    "body-short-sleeve-white":
+    {
+        "id": "16",
+        "name": "Body Manga Curta",
+        "color": "branco",
+        "price": "15.00",
+        "category": "body",
+        "image": "assets/img/clothes/body_short_sleeve_white.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "newborn&baby"
+    },
+
+    "boxer-cotton-green":
+    {
+        "id": "17",
+        "name": "Boxer de Algodão",
+        "color": "verde",
+        "price": "13.00",
+        "category": "interior",
+        "image": "assets/img/clothes/boxer_cotton_green.webp",
+        "novo": "no",
+        "promocao": "yes",
+        "age": "infant" 
+    },
+
+    "camisole-pointelle-pink":
+    {
+        "id": "18",
+        "name": "Camisola Pointelle",
+        "color": "rosa",
+        "price": "15.00",
+        "category": "camisola",
+        "image": "assets/img/clothes/camisole_pointelle_pink.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "infant" 
+    },
+
+    "hoodie-cotton-brown":
+    {
+        "id": "19",
+        "name": "Hoodie de Algodão",
+        "color": "castanho",
+        "price": "56.00",
+        "category": "body",
+        "image": "assets/img/clothes/hoodie_cotton_brown.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant" 
+    },
+
+    "jumper-cotton-yellow":
+    {
+        "id": "20",
+        "name": "Pullover de Algodão",
+        "color": "amarelo",
+        "price": "31.00",
+        "category": "pullover",
+        "image": "assets/img/clothes/jumper_cotton_yellow.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant" 
+    },
+
+    "knickers-pointelle-pink":
+    {
+        "id": "21",
+        "name": "Cueca Pointelle",
+        "color": "rosa",
+        "price": "13.00",
+        "category": "interior",
+        "image": "assets/img/clothes/knickers_pointelle_pink.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "infant"  
+    },
+
+    "pants-cotton-black":
+    {
+        "id": "22",
+        "name": "Calças de Algodão",
+        "color": "preto",
+        "price": "23.00",
+        "category": "calcas",
+        "image": "assets/img/clothes/pants_cotton_black.webp",
+        "novo": "no",
+        "promocao": "yes",
+        "age": "all"   
+    },
+
+    "poncho-towel-green":
+    {
+        "id": "23",
+        "name": "Toalha Estilo Poncho",
+        "color": "verde",
+        "price": "25.00",
+        "category": "toalha",
+        "image": "assets/img/clothes/poncho_towel_green.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant"   
+    },
+
+    "pullover-wool-grey":
+    {
+        "id": "24",
+        "name": "Pullover de Lã",
+        "color": "cinzento",
+        "price": "39.00",
+        "category": "pullover",
+        "image": "assets/img/clothes/pullover_wool_grey.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant"   
+    },
+
+    "raincoat-green":
+    {
+        "id": "25",
+        "name": "Casaco Impermeável",
+        "color": "verde",
+        "price": "35.00",
+        "category": "casaco",
+        "image": "assets/img/clothes/raincoat_green.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant"   
+    },
+
+    "shorts-cotton-blue":
+    {
+        "id": "26",
+        "name": "Calções de Algodão",
+        "color": "azul",
+        "price": "25.00",
+        "category": "calcoes",
+        "image": "assets/img/clothes/shorts_cotton_blue.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant"   
+    },
+
+    "shorts-nylon-green":
+    {
+        "id": "27",
+        "name": "Calções de Banho de Nylon",
+        "color": "verde",
+        "price": "16.00",
+        "category": "praia",
+        "image": "assets/img/clothes/shorts_nylon_green.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant"   
+    },
+
+    "shorts-nylon-red":
+    {
+        "id": "28",
+        "name": "Calções de Banho de Nylon",
+        "color": "vermelho",
+        "price": "16.00",
+        "category": "praia",
+        "image": "assets/img/clothes/shorts_nylon_red.webp",
+        "novo": "no",
+        "promocao": "yes",
+        "age": "infant"   
+    },
+
+    "socks-cotton-grey":
+    {
+        "id": "29",
+        "name": "Meias de Algodão",
+        "color": "cinzento",
+        "price": "12.00",
+        "category": "meias",
+        "image": "assets/img/clothes/socks_cotton_grey.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "all"   
+    },
+
+    "suit-nylon-blue":
+    {
+        "id": "30",
+        "name": "Fato de Banho de Nylon",
+        "color": "azul",
+        "price": "23.00",
+        "category": "praia",
+        "image": "assets/img/clothes/suit_nylon_blue.webp",
+        "novo": "no",
+        "promocao": "no",
+        "age": "infant"   
+    },
+
+    "tee-cotton-blue":
+    {
+        "id": "31",
+        "name": "T-Shirt de Algodão",
+        "color": "azul",
+        "price": "16.00",
+        "category": "camisola",
+        "image": "assets/img/clothes/tee_cotton_blue.webp",
+        "novo": "yes",
+        "promocao": "no",
+        "age": "infant" 
+    }
+
+}

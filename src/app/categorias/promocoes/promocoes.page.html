@@ -1,42 +1,58 @@
-<ion-header class="ion-no-border" #header>
 
-  <ion-toolbar>
+<ion-content>
 
-    <div item-content style="display: flex; justify-content: space-between; width: 100%">
-      <ion-buttons>
-        <ion-back-button text="" icon="chevron-back-outline" style="margin-left: 50%; "></ion-back-button>
-      </ion-buttons>
+  <div id="header">
 
-        <ion-title style="margin-left: auto; margin-right: 14%;">
-          Promoções
-        </ion-title>
-
+    <div id="header-title">
+      <button id="back-button" onclick="history.back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+  
+      <ion-title id="novidades" >
+        Criança
+      </ion-title>
     </div>
 
-      <p>
-        Produtos a um preço mais baixo.
-      </p>
-  
 
-  </ion-toolbar>
+    <p class="header-description">
+      Novas adições à nossa coleção.
+    </p>
 
-</ion-header>
+    <hr/>
 
-<ion-content >
+    <ion-buttons>
+      <ion-button>
+        <ion-icon name="funnel-outline"></ion-icon>
+        <p class="header-description">Filtro</p>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="filter-outline"></ion-icon>
+        <p class="header-description">Ordenar</p>
+      </ion-button>
+    </ion-buttons>
+  </div>
 
 
-  <hr/>
+  <div class="container">
+    <ng-container *ngFor="let product of dataProducts | keyvalue">
+      <ng-container *ngIf="product.value.promocao === 'yes'">
+        
+        <div class="container-content">
+        
+          <ion-card>
+            <img src="{{ product.value.image }}" />
+          </ion-card>
+          
+          <div class="item-box">
+            <h3 class="item-name">{{ product.value.name }}</h3>
+            <p class="item-description">{{ product.value.color }}</p>
+            <p class="item-description">{{ product.value.price }} €</p>
+          </div>
 
-  <ion-buttons>
-    <ion-button>
-      <ion-icon name="funnel-outline"></ion-icon>
-      <p>Filtro</p>
-    </ion-button>
-    <ion-button>
-      <ion-icon name="filter-outline"></ion-icon>
-      <p>Ordenar</p>
-    </ion-button>
-  </ion-buttons>
-
+        </div>
+        
+      </ng-container>  
+    </ng-container>
+  </div>
 
 </ion-content>

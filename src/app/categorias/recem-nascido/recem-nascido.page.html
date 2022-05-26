@@ -33,23 +33,26 @@
   </div>
 
 
-  <div class="product">
+  <div class="container">
+    <ng-container *ngFor="let product of dataProducts | keyvalue">
+      <ng-container *ngIf="product.value.age === 'newborn' ||product.value.age === 'newborn&baby' || product.value.age == 'all'">
+        
+        <div class="container-content">
+        
+          <ion-card>
+            <img src="{{ product.value.image }}" />
+          </ion-card>
+          
+          <div class="item-box">
+            <h3 class="item-name">{{ product.value.name }}</h3>
+            <p class="item-description">{{ product.value.color }}</p>
+            <p class="item-description">{{ product.value.price }} €</p>
+          </div>
 
-    <div *ngFor="let product of dataProducts | keyvalue" class="content-box" >
-      <ion-card>
-        <img src="{{ product.value.image }}" />
-      </ion-card>
-      
-      <div class="item-box">
-        <h3 class="item-name">{{ product.value.name }}</h3>
-        <p class="item-description">{{ product.value.color }}</p>
-        <p class="item-description">{{ product.value.price }} €</p>
-      </div>
-    </div>
-
-
+        </div>
+        
+      </ng-container>  
+    </ng-container>
   </div>
-
-
 
 </ion-content>

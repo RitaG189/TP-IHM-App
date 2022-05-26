@@ -13,10 +13,12 @@ export class BebePage implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    fetch('./assets/data/bebe.json')
+    fetch('./assets/data/clothes.json')
       .then(res => res.json())
       .then(json => {
         this.dataProducts = json;
+        console.log(this.dataProducts);
+        
       })
   }
 

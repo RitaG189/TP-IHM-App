@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PromocoesPage implements OnInit {
 
-  constructor() { }
+  public dataProducts: any;
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit(): void {
+    fetch('./assets/data/clothes.json')
+      .then(res => res.json())
+      .then(json => {
+        this.dataProducts = json;
+      })
+      
   }
 
 }

@@ -64,17 +64,16 @@ ion-icon {
 
 // items
 
-.product {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 2%;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 46%);
+    justify-content: space-evenly;
 }
 
-.content-box {
+
+.container-content {
   display: flex;
   flex-direction: column;
-  width: 47%;
   padding-top: 4%;
 }
 

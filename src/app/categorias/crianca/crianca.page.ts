@@ -12,7 +12,7 @@ export class CriancaPage implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    fetch('./assets/data/crianca.json')
+    fetch('./assets/data/clothes.json')
       .then(res => res.json())
       .then(json => {
         this.dataProducts = json;
