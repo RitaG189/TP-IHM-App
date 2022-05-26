@@ -31,8 +31,12 @@ ion-list {
     --border-radius: 10px;
     --box-shadow: none;
     --ripple-color: transparent;
-    
+    --background: #F3E8DE;
 }
+
+
+
+
 
 h1 {
 
@@ -53,4 +57,9 @@ p {
 h3 {
     text-align: center;
     
+}
+
+
+ion-item {
+    --ripple-color: transparent;
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Platform } from '@ionic/angular';
 
 
 @Component({
@@ -8,11 +10,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent 
 {
-  constructor() 
+  constructor( private platform: Platform, private statusBar: StatusBar) 
   {
-    
-  }
-  
-}
+    this.platform.ready().then(() => {
+      this.statusBar.overlaysWebView(false);
 
+    }); 
+  
+  }
+}
 

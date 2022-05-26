@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HideHeaderDirective } from 'src/app/directives/hide-header.directive';
 
 import { CriarContaPage } from './criar-conta.page';
 
@@ -13,6 +12,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule, HideHeaderDirective],
+  exports: [RouterModule],
 })
 export class CriarContaPageRoutingModule {}

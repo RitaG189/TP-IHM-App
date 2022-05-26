@@ -49,6 +49,11 @@
 }
 
 @font-face {
+	font-family: 'Nunito-Medium';
+	src: url('/assets/fonts/Nunito-Medium.ttf');
+}
+
+@font-face {
 	font-family: 'Nunito-SemiBold';
 	src: url('/assets/fonts/Nunito-SemiBold.ttf');
 }
@@ -101,8 +106,13 @@
 	-webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
 
-  }
+}
 
-  ion-button {
+ion-button {
 	text-transform: none;
-   }
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}

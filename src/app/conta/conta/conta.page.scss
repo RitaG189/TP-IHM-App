@@ -1,41 +1,70 @@
-.header-button {
-    margin-top: 5%;
+// header
+
+
+#header-title {
+    display: flex;
+    align-items: center;
+    margin: 6% 0;
+}
+
+#logout-button {
+    --background: transparent;
+    color: #363636;
+    font-size: 20px;
+    --box-shadow: none;
+    margin-right: 10%;
+    --ripple-color:transparent;
+
+    
+}
+
+ion-title {
+    text-align: left;
+    font-family: 'Solway-Bold' !important;
+    font-size: 20pt;
+    color: #363636;
+}   
+
+
+#conta {
+    font-family: 'Solway-Bold' !important;
+    font-size: 20px;
+    color: #363636;
+    margin-left: 10%;
+}   
+
+.header-description {
+    text-align: center;
+    font-family: 'Nunito-Regular' !important;
+    font-size: 14px;
+}
+
+
+hr {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border-top: 4px solid #F4ECE4;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    height: 50px;
-    --border-radius: 10px;
-    --box-shadow: none;
-    --ripple-color: transparent;
-    
 }
 
-h1 {
 
-    font-family: 'Nunito-Bold';
-    font-size: 16px;
-    color:#363636;
-    
-}
+// body
 
 #buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     margin: auto;
     width: 70%;
     margin-top: 10%;
 }
 
-#conta {
-    margin-top: 5%;
-    font-family: 'Solway-Bold';
-    font-size: 20px;
+.button-title {
+    font-family: 'Nunito-Bold';
+    font-size: 16px;
     color:#363636;
-    text-align: center;
 }
 
-#header-button {
-    margin-left: 50%;
-    margin-top: 40%;
-}

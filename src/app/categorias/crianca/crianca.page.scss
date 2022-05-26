@@ -1,0 +1,113 @@
+
+// header
+
+#header-title {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin-left: 11%;
+    margin-top: 7%;
+}
+
+#back-button {
+    background: transparent;
+    color: #363636;
+    font-size: 20px;
+    --box-shadow: none;
+    width: 20%;
+}
+
+ion-title {
+    font-family: 'Solway-Bold' !important;
+    font-size: 20px;
+    color: #363636;
+
+}   
+
+
+#novidades {
+    text-align: center;
+    font-family: 'Solway-Bold' !important;
+    font-size: 20px;
+    color: #363636;
+    margin-right: 30%;
+}   
+
+.header-description {
+    text-align: center;
+    font-family: 'Nunito-Regular' !important;
+    font-size: 14px;
+}
+
+
+hr {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border-top: 4px solid #F4ECE4;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+ion-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+    padding-bottom: 15px;
+    
+}
+
+ion-icon {
+    margin-right: 8px;
+}
+
+// items
+
+.product {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2%;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  padding-top: 4%;
+}
+
+ion-card {
+  border: 2px solid #F3E8DE;
+  --ion-background-color: #FFF7EF;
+  box-shadow: none;
+  width: 100%;
+  margin: 0;
+  height: 280;
+}
+
+.item-box {
+    width: 100%;
+}
+
+.item-name {
+  font-family: 'Nunito-SemiBold';
+  font-size: 12px;
+  text-align: left;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-description {
+  text-align: left;
+  font-family: 'Nunito-Medium';
+  color: #676767;
+  font-size: 12px;
+  padding-left: 10pt;
+  text-transform: capitalize;
+}

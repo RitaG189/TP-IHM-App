@@ -1,22 +1,21 @@
-<ion-header class="ion-no-border" #header>
-  <ion-toolbar>
 
-    <div item-content style="display: flex; justify-content: space-between; width: 100%">
-      <ion-buttons>
-        <ion-back-button text="" icon="chevron-back-outline" style="margin-left: 50%; "></ion-back-button>
-      </ion-buttons>
 
-        <ion-title style="margin-left: auto; margin-right: 14%;">
-          Criar Conta
-        </ion-title>
+<ion-content fullscreen="true">
 
-    </div>
+  <div id="header">
+
+    
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
   
+    <ion-title >
+      Criar Conta
+    </ion-title>
+  </div>
 
-  </ion-toolbar>
-</ion-header>
 
-<ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <hr/>
 

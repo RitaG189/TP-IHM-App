@@ -1,5 +1,12 @@
 // header
 
+#cesto-box {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+
+}
+
 #cesto {
     text-align: left;
     margin-top: 5%;
@@ -16,6 +23,18 @@
     margin-top: 5%;
     margin-left: 10%;
     color: #363636;
+    background-color: #F4ECE4;
+    font-family: 'Nunito-Regular';
+
+}
+
+#total {
+
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    color: #363636;
+    font-family: 'Nunito-Bold';
 
 }
 

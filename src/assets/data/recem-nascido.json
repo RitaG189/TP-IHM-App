@@ -1,0 +1,99 @@
+{
+    "body-merino-blue": 
+    {
+        "id": "1",
+        "name": "Body de Merino",
+        "color": "azul",
+        "price": "19.00",
+        "category": "body",
+        "image": "assets/img/clothes/recem-nascido/body_merino_azul.webp",
+        "novo": "no",
+        "promocao": "no"
+    },
+
+    "body-merino-pink":
+    {
+        "id": "2",
+        "name": "Body de Merino",
+        "color": "rosa",
+        "price": "19.00",
+        "category": "body",
+        "image": "assets/img/clothes/recem-nascido/body_merino_rosa.webp",
+        "novo": "no",
+        "promocao": "no"
+    },
+    
+    "body-pointelle-green":
+    {
+        "id": "3",
+        "name": "Body Pointelle",
+        "color": "verde",
+        "price": "24.00",
+        "category": "body",
+        "image": "assets/img/clothes/recem-nascido/body_pointelle_green.webp",
+        "novo": "no",
+        "promocao": "no"
+    },
+
+    "body-pointelle-kimono-white":
+    {
+        "id": "4",
+        "name": "Body Kimono Pointelle",
+        "color": "branco",
+        "price": "30.00",
+        "category": "body",
+        "image": "assets/img/clothes/recem-nascido/body_pointelle_kimono_white.webp",
+        "novo": "no",
+        "promocao": "no"
+    },
+
+    "cotton-drawstring-pants-blue":
+    {
+        "id": "5",
+        "name": "Calças de Algodão com Cordão",
+        "color": "azul",
+        "price": "16.00",
+        "category": "calcas",
+        "image": "assets/img/clothes/recem-nascido/cotton_drawstring_pants_blue.webp",
+        "novo": "no",
+        "promocao": "no"
+    },
+
+    "knit-footed-pants-beige":
+    {
+        "id": "6",
+        "name": "Calças de Malha com Pé",
+        "color": "beige",
+        "price": "45.00",
+        "category": "calcas",
+        "image": "assets/img/clothes/recem-nascido/knit_footed_pants_beige.webp",
+        "novo": "no",
+        "promocao": "no"
+    },
+
+    "stretch-grow-merino-grey":
+    {
+    "id": "7",
+    "name": "Stretch & Grow Merino",
+    "color": "cinzento",
+    "price": "35.00",
+    "category": "stretch & grow",
+    "image": "assets/img/clothes/recem-nascido/stretch_grow_merino_grey.webp",
+    "novo": "no",
+    "promocao": "no"
+    },
+
+    "body-short-sleeve-white":
+    {
+    "id": "8",
+    "name": "Body Manga Curta",
+    "color": "branco",
+    "price": "15.00",
+    "category": "body",
+    "image": "assets/img/clothes/recem-nascido/body_short_sleeve_white.webp",
+    "novo": "no",
+    "promocao": "no"
+    }
+
+}
+

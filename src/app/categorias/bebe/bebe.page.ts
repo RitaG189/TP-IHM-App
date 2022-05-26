@@ -8,16 +8,16 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class BebePage implements OnInit {
 
-  public category: any
+  public dataProducts: any;
 
-  constructor(private router: Router, private activeRoute: ActivatedRoute) { 
-    this.activeRoute.queryParams.subscribe(params => {
-      if(this.router.getCurrentNavigation()) {
-        this.category = this.router.getCurrentNavigation()
-      }
-    })
+  constructor() {}
+
+  ngOnInit(): void {
+    fetch('./assets/data/bebe.json')
+      .then(res => res.json())
+      .then(json => {
+        this.dataProducts = json;
+      })
   }
-
-  ngOnInit() {}
 
 }
