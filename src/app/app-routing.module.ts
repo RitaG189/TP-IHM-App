@@ -64,6 +64,10 @@ const routes: Routes = [
   {
     path: 'confirmacao',
     loadChildren: () => import('./checkout/confirmacao/confirmacao.module').then( m => m.ConfirmacaoPageModule)
+  },
+  {
+    path: 'pagina-produto',
+    loadChildren: () => import('./pagina-produto/pagina-produto.module').then( m => m.PaginaProdutoPageModule)
   }
 
 

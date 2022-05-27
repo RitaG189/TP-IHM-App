@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tab5',
@@ -8,27 +7,39 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab5Page implements OnInit {
 
-  email: string = "aluno@ipvc.pt";
-  password: string = "123";
+  public dataProducts: any;
+  public accountLogin: boolean = false;
 
-  constructor(public navCtrl: NavController) { 
-    
+  constructor() { }
 
-    
+  ngOnInit(): void {
+    fetch('./assets/data/clothes.json')
+      .then(res => res.json())
+      .then(json => {
+        this.dataProducts = json;
+      })
+      
   }
 
-  ngOnInit() {
+  validateAccount(email: string, password: string) {
+    
+    if(email === "aluno" && password === "123") {
+      this.accountLogin = true;   
+    }
+
+    if(this.accountLogin) {
+      document.getElementById("profile").style.display = "";
+      document.getElementById("login").style.display = "none";
+      
+    } else {
+      document.getElementById("profile").style.display = "none";
+    }
   }
 
-  verifyAccount() {
+  logout() {
+    document.getElementById("profile").style.display = "none";
+    document.getElementById("login").style.display = "";
 
-  var inputEmail = document.getElementById('email').nodeValue;
-    
-  //window.alert(inputEmail)
-
-    // if(this.email === email2 && this.password === password) {
-      // window.alert("login" + email2 + this.email)
-    // }
   }
 
 }

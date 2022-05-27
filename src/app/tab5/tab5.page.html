@@ -1,37 +1,137 @@
 
-
-
 <ion-content [fullscreen]="true">
 
-    <ion-title class="login">Login</ion-title>
+    <div id="login">
 
-    <hr/>
+        <ion-title class="login-title">Login</ion-title>
 
-    <p class="email">Email</p>
-    <ion-input class="email-input" [(ngModel)]="email"></ion-input>
+        <hr class="hr-login" />
 
-    <p class="password">Password</p>
-    <ion-input class="password-input" id="password"></ion-input>
+        <p class="email">Email</p>
+        <ion-input class="email-input" [(ngModel)]="email"></ion-input>
+    
+        <p class="password">Password</p>
+        <ion-input type="password" class="password-input" [(ngModel)]="password"></ion-input>
+    
+        <p class="forget-password"><u>Esqueceste-te da password?</u></p>
+    
+    
+        <div style="text-align: center; width: 80%; margin:auto; margin-top: 10%;">
+            <ion-button class="login-button" color="lightgrey" style="margin-top: 5%;"
+                        (click)="validateAccount(email, password)">
+                <p>Entrar</p>
+            </ion-button>
+        </div>
+    
+        <hr class="hr-login" />
+    
+        <div style="text-align: center; width: 80%; margin:auto">
 
-    <p class="forget-password"><u>Esqueceste-te da password?</u></p>
+            <ion-title class="create-account">
+                Ainda não tens conta? 
+            </ion-title>
 
+            <ion-button class="login-button" color="lightgrey" routerLink="/criar-conta" routerDirection="forward">
+                <p>Criar Conta</p> 
+            </ion-button>
+        </div>
 
-    <div style="text-align: center;">
-        <ion-button id="login" class="button" color="lightgrey" 
-                    style="margin-top: 5%;"
-                    (click)="verifyAccount()"
-                    routerLink="/conta" routerDirection="forward">
-            <p>Entrar</p>
-        </ion-button>
     </div>
 
-    <hr/>
 
-    <div style="text-align: center;">
-        <ion-button class="button" color="lightgrey" routerLink="/criar-conta" routerDirection="forward">
-            <p>Criar Conta</p> 
-        </ion-button>
+    <div id="profile" style="display: none;">
+
+        <div id="header">
+            <div id="header-title">
+        
+            <ion-title id="conta" >
+                Aluno EI
+            </ion-title>
+
+            <ion-alert-controller></ion-alert-controller>
+            <ion-button id="logout-button">
+                <ion-icon name="exit-outline"></ion-icon>
+            </ion-button>
+
+            </div>
+        </div>
+
+        <hr class="hr-profile" />
+
+        <div id="buttons">
+
+            <ion-button class="button" color="pastelbeige">
+            <ion-label>
+                <h1 class="button-title">
+                    Conta
+                </h1>
+            </ion-label>
+            </ion-button>
+            
+            <ion-button class="button" color="pastelbeige">
+            <ion-label>
+                <h1 class="button-title">
+                    Segurança
+                </h1>
+            </ion-label>
+            </ion-button>
+        
+            <ion-button class="button" color="pastelbeige">
+            <ion-label>
+                <h1 class="button-title">
+                    Encomenda
+                </h1>
+            </ion-label>
+            </ion-button>
+        
+            <ion-button class="button" color="pastelbeige">
+            <ion-label>
+                <h1 class="button-title">
+                    Devoluções
+                </h1>
+            </ion-label>
+            </ion-button>
+        
+            <ion-button class="button" color="pastelbeige">
+            <ion-label>
+                <h1 class="button-title">
+                    Ajuda
+                </h1>
+            </ion-label>
+            </ion-button>
+        
+            <ion-button class="button" color="pastelbeige">
+            <ion-label>
+                <h1 class="button-title">
+                    Definições
+                </h1>
+            </ion-label>
+            </ion-button>
+        </div>
+  
+  
     </div>
 
 
 </ion-content>
+
+<script type="module">
+    
+    import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+    window.alertController = alertController;
+
+
+    const button = document.querySelector('logout-button');
+    button.addEventListener('click', handleButtonClick);
+
+    async function handleButtonClick() {
+        const alert = await alertController.create({
+          header: 'Sair da Conta?',
+          message: 'Desejas mesmo sair da conta?',
+          buttons: ['Não', 'Sim'],
+        });
+
+        await alert.present();
+      }
+
+</script>

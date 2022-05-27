@@ -2,11 +2,11 @@
     "accounts": 
     [
         {
-            "email": "ionic",
-            "password": "ionic",
-            "username": "ionic",
-            "firstName": "ionic",
-            "lastName": "ionic"
+            "email": "aluno",
+            "password": "123",
+            "username": "aluno",
+            "firstName": "Aluno",
+            "lastName": "EI"
         }
 
     ]
