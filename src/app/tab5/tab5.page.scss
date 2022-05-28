@@ -47,26 +47,10 @@
     color: #363636;
 }
 
-.email-input {
+.input {
 
-    // body
-    --background: #F3E8DE;
-    --border-color: #F3E8DE;
-    --border-width:10pt;
-    width: 75%;
-    border-radius: 10pt;
-    text-align: left;
-    margin-top: 4%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Nunito-Bold';
-}
-
-.password-input {
-
-    // body
-    --background: #F3E8DE;
-    --border-color: #F3E8DE;
+    --background: #FFF7EF;
+    border: 1px solid #F3E8DE;
     --border-width:10pt;
     width: 75%;
     border-radius: 10pt;

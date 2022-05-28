@@ -1,9 +1,63 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>seguranca</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
+
+  <div id="header">
+
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
+    <h1 id="seguranca">Segurança</h1>
+  
+  </div>
+
+  <hr />
+
+  <div id="alterar-password">
+
+    <div style="display: flex; align-items: center; gap: 15px; ">
+      <img src="assets/icon/password.png" height="45px"/>
+      <h2 class="title">Alterar Password</h2>
+    </div>
+    
+
+    <p class="text">Password antiga</p>
+    <ion-input class="alterar-password-input"></ion-input>
+
+    <p class="text">Nova password</p>
+    <ion-input class="alterar-password-input"></ion-input>
+
+    <p class="text">Confirmar nova password</p>
+    <ion-input class="alterar-password-input"></ion-input>
+
+    <div style="text-align: center;">
+      <ion-button class="general-button">Guardar</ion-button>
+    </div>
+   
+
+  </div>
+
+  <hr />
+
+  <div id="verificacoes-seguranca">
+
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="assets/icon/lock.png" height="25px"/>
+      <h2 class="title">Verificações de Segurança</h2>
+    </div>
+    
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+      <p class="text-seguranca">Verificação de Email</p>
+      <ion-icon id="checkmark-icon" name="checkmark-outline"></ion-icon>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+      <p class="text-seguranca">Verificação de Telemóvel</p>
+      <p id="verificar-button">Verificar</p>
+    </div>
+    
+  </div>
+
 
 </ion-content>

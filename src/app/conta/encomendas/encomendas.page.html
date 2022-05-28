@@ -1,9 +1,114 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>encomendas</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
+
+  <div id="header">
+
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
+    <h1 id="seguranca">Encomendas</h1>
+  
+  </div>
+
+  <div id="pedidos">
+
+    <ion-accordion-group>
+
+      <ion-accordion>
+
+        <ion-item slot="header">
+          <ion-label class="title">Pedidos Atuais</ion-label>
+        </ion-item>
+
+        <ion-list slot="content">
+
+          <ion-item lines="none">
+
+            <div style="display:flex; text-align: right;">
+              <div style="text-align: left;">
+                <ion-label class="pedido-text">PEDIDO Nº 0000001 </ion-label>
+                <ion-label class="pedido-text">22/05/2022</ion-label>
+              </div>
+              <div>
+                <ion-label class="estado-pedido">ENVIADO</ion-label>
+                <ion-label class="pedido-text">Ver info.</ion-label>
+              </div>
+            </div>
+
+
+
+          </ion-item>
+
+          <ion-item lines="none">
+            <div style="display:flex; text-align: right;">
+              <div style="text-align: left;">
+                <ion-label class="pedido-text">PEDIDO Nº 0000002 </ion-label>
+                <ion-label class="pedido-text">22/05/2022</ion-label>
+              </div>
+              <div>
+                <ion-label class="estado-pedido">EM PROCESSAMENTO</ion-label>
+                <ion-label class="pedido-text">Ver info.</ion-label>
+              </div>
+            </div>
+          </ion-item>
+          
+        </ion-list>
+
+      </ion-accordion>
+
+    </ion-accordion-group>
+
+    <hr />
+
+    <ion-accordion-group>
+
+      <ion-accordion>
+
+        <ion-item slot="header">
+          <ion-label class="title">Histórico de Pedidos</ion-label>
+        </ion-item>
+
+        <ion-list slot="content">
+
+          <ion-item lines="none">
+            <div style="display:flex; text-align: right;">
+              <div style="text-align: left;">
+                <ion-label class="pedido-text">PEDIDO Nº 0000002 </ion-label>
+                <ion-label class="pedido-text">22/05/2022</ion-label>
+              </div>
+              <div>
+                <ion-label class="estado-pedido-enviado">ENVIADO</ion-label>
+                <ion-label class="pedido-text">Ver info.</ion-label>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item lines="none">
+            <div style="display:flex; text-align: right;">
+              <div style="text-align: left;">
+                <ion-label class="pedido-text">PEDIDO Nº 0000002 </ion-label>
+                <ion-label class="pedido-text">22/05/2022</ion-label>
+              </div>
+              <div>
+                <ion-label class="estado-pedido-cancelado">CANCELADO</ion-label>
+                <ion-label class="pedido-text">Ver info.</ion-label>
+              </div>
+            </div>
+          </ion-item>
+          
+        </ion-list>
+
+      </ion-accordion>
+
+    </ion-accordion-group>
+  </div>
+
+
+ 
+
+
+
+
 
 </ion-content>
