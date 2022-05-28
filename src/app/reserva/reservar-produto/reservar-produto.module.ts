@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PerfilPageRoutingModule } from './perfil-routing.module';
+import { ReservarProdutoPageRoutingModule } from './reservar-produto-routing.module';
 
-import { PerfilPage } from './perfil.page';
+import { ReservarProdutoPage } from './reservar-produto.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PerfilPageRoutingModule
+    ReservarProdutoPageRoutingModule
   ],
-  declarations: [PerfilPage]
+  declarations: [ReservarProdutoPage]
 })
-export class PerfilPageModule {}
+export class ReservarProdutoPageModule {}

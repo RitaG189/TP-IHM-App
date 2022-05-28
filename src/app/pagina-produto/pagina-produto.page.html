@@ -1,34 +1,67 @@
 
-<ion-content>
+<ion-content >
 
-  <div id="header"></div>
+  <div id="header">
+  
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
 
-
-  <div id="product-image"></div>
-
-  <div id="product-info">
-
-    <h1 id="product-title"></h1>
-
-    <p id="product-description"></p>
-
-    <div id="price">
-      <h2>Cor:</h2>
-    </div>
-
-    <div id="color">
-      <h2>Tamanho:</h2>
-    </div>
-
-    <!-- sizes: buttons? -->
+    <button id="heart-button">
+      <ion-icon name="heart-outline"></ion-icon>
+    </button>
 
   </div>
 
-  <ion-button>Adicionar ao Cesto</ion-button>
+  <!-- *ngIf="infoProduto" -->
 
-  <p id="reserva-text"></p>
+  <div style="text-align:center;">
+    <!-- <img src="{{ infoProduto.image }}" /> -->
+    <img id="product-image" src="assets/img/clothes/body_merino_azul.webp" />
+  </div>
 
-  <ion-button>Reservar</ion-button>
+  <div id="product-info">
+
+    <h1 id="product-title"> Body de Merino</h1>
+
+    <p id="product-description">
+      Este casaco com fecho possui dois bolsos. É perfeito como um casaco de camada média 
+      que é fácil de colocar e tirar. O capuz é ótimo para manter as cabecinhas cobertas 
+      quando se está fora de casa.
+    </p>
+
+    <h2 id="price"> 20.00 </h2>
+
+    <div style="margin: auto;">
+
+      <h2 id="color"> COR: Verde </h2>
+
+
+
+      <h2 id="size"> Tamanho: </h2>
+    
+    </div>
+
+    <div id="size-button-group">
+      <ion-button class="size-button"> 0 - 3 m </ion-button>
+      <ion-button class="size-button"> 3 - 6 m </ion-button>
+      <ion-button class="size-button"> 6 - 12 m </ion-button>
+    </div>
+
+  </div>
+
+    <ion-buttons style="padding: 20px 0;">
+      <ion-button class="general-button">Adicionar ao Cesto</ion-button>
+    </ion-buttons>
+
+    <hr />
+
+  <p id="reserva-text">Queres experimentar antes de comprar? Reserva o produto numa loja física:</p>
+
+    <ion-buttons style="padding: 20px 0;">
+      <ion-button class="general-button" routerLink="/reservar-produto">Reservar</ion-button>
+    </ion-buttons>
+ 
 
   <hr />
 
@@ -40,7 +73,10 @@
 
   <p>Ainda não existe nenhuma classificação.</p>
 
-  <ion-button>Classificar</ion-button>
+  <ion-buttons>
+    <ion-button class="general-button">Classificar</ion-button>
+  </ion-buttons>
+  
 
 
 

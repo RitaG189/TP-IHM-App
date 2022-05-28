@@ -25,17 +25,14 @@ const routes: Routes = [
   {
     path: 'conta',
     loadChildren: () => import('./conta/conta/conta.module').then( m => m.ContaPageModule)
-  },  {
+  },
+  {
     path: 'recem-nascido',
     loadChildren: () => import('./categorias/recem-nascido/recem-nascido.module').then( m => m.RecemNascidoPageModule)
   },
   {
     path: 'crianca',
     loadChildren: () => import('./categorias/crianca/crianca.module').then( m => m.CriancaPageModule)
-  },
-  {
-    path: 'perfil',
-    loadChildren: () => import('./conta/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
     path: 'seguranca',
@@ -54,10 +51,6 @@ const routes: Routes = [
     loadChildren: () => import('./conta/sobre-nos/sobre-nos.module').then( m => m.SobreNosPageModule)
   },
   {
-    path: 'cesto',
-    loadChildren: () => import('./cesto/cesto.module').then( m => m.CestoPageModule)
-  },
-  {
     path: 'pagamento',
     loadChildren: () => import('./checkout/pagamento/pagamento.module').then( m => m.PagamentoPageModule)
   },
@@ -68,11 +61,17 @@ const routes: Routes = [
   {
     path: 'pagina-produto',
     loadChildren: () => import('./pagina-produto/pagina-produto.module').then( m => m.PaginaProdutoPageModule)
+  },
+  {
+    path: 'reservar-produto',
+    loadChildren: () => import('./reserva/reservar-produto/reservar-produto.module').then( m => m.ReservarProdutoPageModule)
+  },
+  {
+    path: 'confirmacao-reserva',
+    loadChildren: () => import('./reserva/confirmacao-reserva/confirmacao-reserva.module').then( m => m.ConfirmacaoReservaPageModule)
   }
 
 
-
-  
 
 ];
 @NgModule({

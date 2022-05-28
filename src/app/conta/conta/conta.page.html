@@ -1,72 +1,57 @@
-
 <ion-content>
 
   <div id="header">
-    <div id="header-title">
+
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
+    <h1 id="conta">Conta</h1>
   
-      <ion-title id="conta" >
-        Aluno EI
-      </ion-title>
+  </div>
 
-      <ion-button id="logout-button" onclick="history.back()">
-        <ion-icon name="exit-outline"></ion-icon>
-      </ion-button>
+  <hr />
 
+  <div id="dados-pessoais">
+
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <ion-icon name="person" style="margin-top: 6px; font-size: 20px;"></ion-icon>
+      <h2>Dados Pessoais</h2>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-between;">
+      <h3 class="info">Nome</h3>
+      <h3 class="info-cliente"> ::nome:: </h3>
+    </div>
+  
+    <div style="display: flex; justify-content: space-between;">
+      <h3 class="info">Apelido</h3>
+      <h3 class="info-cliente"> ::apelido:: </h3>
+    </div>
+  
+    <div style="display: flex; justify-content: space-between;">
+      <h3 class="info">Nome de Utilizador</h3>
+      <h3 class="info-cliente"> ::nome utilizador:: </h3>
+    </div>
+  
+    <div style="display: flex; justify-content: space-between;">
+      <h3 class="info">Email</h3>
+      <h3 class="info-cliente"> ::email:: </h3>
+    </div>
+  
+    <div style="display: flex; justify-content: space-between;">
+      <h3 class="info">Data de Nascimento</h3>
+      <h3 class="info-cliente"> ::data:: </h3>
+    </div>
+  
+    <div style="display: flex; justify-content: space-between;">
+      <h3 class="info">Contacto</h3>
+      <h3 class="info-cliente"> ::contacto:: </h3>
     </div>
   </div>
 
-  <hr/>
+  
 
-  <div id="buttons">
 
-    <ion-button class="button" color="pastelbeige">
-      <ion-label>
-          <h1 class="button-title">
-              Conta
-          </h1>
-      </ion-label>
-    </ion-button>
-    
-    <ion-button class="button" color="pastelbeige">
-      <ion-label>
-          <h1 class="button-title">
-              Segurança
-          </h1>
-      </ion-label>
-    </ion-button>
-  
-    <ion-button class="button" color="pastelbeige">
-      <ion-label>
-          <h1 class="button-title">
-              Encomenda
-          </h1>
-      </ion-label>
-    </ion-button>
-  
-    <ion-button class="button" color="pastelbeige">
-      <ion-label>
-          <h1 class="button-title">
-              Devoluções
-          </h1>
-      </ion-label>
-    </ion-button>
-  
-    <ion-button class="button" color="pastelbeige">
-      <ion-label>
-          <h1 class="button-title">
-              Ajuda
-          </h1>
-      </ion-label>
-    </ion-button>
-  
-    <ion-button class="button" color="pastelbeige">
-      <ion-label>
-          <h1 class="button-title">
-              Definições
-          </h1>
-      </ion-label>
-    </ion-button>
-  </div>
-  
-  
 </ion-content>

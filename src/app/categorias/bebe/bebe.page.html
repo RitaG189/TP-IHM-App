@@ -33,11 +33,11 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" routerLink="/pagina-produto">
     <ng-container *ngFor="let product of dataProducts | keyvalue">
       <ng-container *ngIf="product.value.age === 'baby' || product.value.age === 'newborn&baby' || product.value.age == 'all'">
         
-        <div class="container-content">
+        <div class="container-content" (click)="verProduto('{{ product.value.id }}')">
         
           <ion-card>
             <img src="{{ product.value.image }}" />

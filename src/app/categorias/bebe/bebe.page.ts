@@ -10,7 +10,8 @@ export class BebePage implements OnInit {
 
   public dataProducts: any;
 
-  constructor() {}
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     fetch('./assets/data/clothes.json')
@@ -21,5 +22,10 @@ export class BebePage implements OnInit {
         
       })
   }
+
+  // verProduto(produtoID: string) {
+  //   this.router.navigate(['pagina-produto'], produtoID)
+
+  // }
 
 }

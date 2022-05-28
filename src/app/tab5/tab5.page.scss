@@ -108,11 +108,20 @@
 
 // header
 
-
-#header-title {
+#header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 6% 0;
+}
+
+
+#header-title {
+    font-family: 'Solway-Bold' !important;
+    font-size: 20px;
+    color: #363636;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #logout-button {
@@ -120,9 +129,8 @@
     color: #363636;
     font-size: 20px;
     --box-shadow: none;
-    margin-right: 10%;
+    margin-top: 0%;
     --ripple-color:transparent;
-
     
 }
 
@@ -131,20 +139,6 @@ ion-title {
     font-family: 'Solway-Bold' !important;
     font-size: 20pt;
     color: #363636;
-}   
-
-
-#conta {
-    font-family: 'Solway-Bold' !important;
-    font-size: 20px;
-    color: #363636;
-    margin-left: 10%;
-}   
-
-.header-description {
-    text-align: center;
-    font-family: 'Nunito-Regular' !important;
-    font-size: 14px;
 }
 
 

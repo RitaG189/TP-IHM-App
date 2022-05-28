@@ -1,0 +1,65 @@
+
+<ion-content>
+  
+  <!-- header -->
+
+  <div id="header">
+
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
+    <h1 id="header-title">Reserva</h1>
+
+  </div>
+
+  <hr />
+
+  <!-- reserva info -->
+
+  <div style="margin: 0 40px; text-align: left;">
+    <h2  class="info-title"> Reserva em nome de:</h2>
+
+    <ion-input class="input"></ion-input>
+
+    <h2  class="info-title"> Contacto:</h2>
+
+    <ion-input class="input"></ion-input>
+  
+    <h2 class="info-title">Loja(s) para reserva:</h2>
+  
+  </div>
+
+  <!-- loja -->
+
+  <ion-radio-group>
+    <div *ngFor="let loja of lojas | keyvalue">
+
+      <div class="reserva-box">  
+
+        <div>
+          <h2 class="reserva-title"> {{ loja.value.nome }} </h2>
+          <p> {{ loja.value.rua }} </p>
+          <p> {{ loja.value.cidade }} </p>
+          <p> {{ loja.value.codPostal }} </p>
+        </div>
+    
+        <div style="text-align: right;">
+          <ion-radio style="margin: 20px 6px;"></ion-radio>
+          <p class="horario-button">Ver horário</p>
+        </div>
+    
+      </div>
+
+    </div>
+  </ion-radio-group>
+
+
+  <!-- botão confirmar -->
+
+  <ion-button class="general-button" style="margin-left: auto; margin-right: auto;" routerLink="/confirmacao-reserva"> 
+    Confirmar 
+  </ion-button>
+  
+
+</ion-content>

@@ -1,17 +1,17 @@
 // header
 
-#cesto-box {
+#header {
     display: flex;
     align-items: center;
     justify-content:left;
+    margin-left: 8%;
+    margin-top: 8%;
 
 }
 
 #cesto {
     text-align: left;
-    margin-top: 5%;
-    margin-left: 10%;
-
+    margin-left: 5%;
     font-family: 'Solway-Medium';
     font-size: 18pt;
     color: #363636;
@@ -19,26 +19,37 @@
 
 #total-items {
 
-    text-align: left;
-    margin-top: 5%;
-    margin-left: 10%;
+    text-align: center;
+    padding-top: 2%;
+    margin-left: 5%;
     color: #363636;
+    border-radius: 50px;
+    width: 40px;
+    height: 24px;
     background-color: #F4ECE4;
     font-family: 'Nunito-Regular';
 
 }
 
-#total {
-
-    text-align: left;
-    margin-top: 5%;
-    margin-left: 10%;
-    color: #363636;
-    font-family: 'Nunito-Bold';
-
+#total-box {
+    display: flex; 
+    flex-direction: column; 
+    text-align: left; 
+    margin-top: 5%; 
+    margin-left: 20%;
 }
 
-// content
+#total {
+    text-align: center;
+    color: #363636;
+    font-family: 'Nunito-Bold';
+}
+
+#total-info {
+    color: #363636;
+    font-family: 'Nunito-Medium';
+    font-size: 12px;
+}
 
 hr {
     display: block;
@@ -47,10 +58,10 @@ hr {
     border-top: 4px solid #F4ECE4;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
-
+// content
 
 #bunny {
     display: block;
@@ -73,9 +84,9 @@ hr {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Nunito-Bold';
-    font-size: 8pt;
+    font-size: 10pt;
     color: #363636;
-    width: 60%;
+    width: 70%;
     margin-top: 2%;
 }
 
