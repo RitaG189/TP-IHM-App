@@ -9,6 +9,49 @@
 
     <hr />
 
+    <div class="container">
+            
+        <div id="produto1" class="container-content">
+        
+            <ion-card>
+                <div id="container">
+                    <img src="assets/img/clothes/body_merino_azul.webp" />
+                </div>
+ 
+            </ion-card>
+            
+            <div style="display: flex;">
+                <div class="item-box">
+                    <h3 class="item-name"> Body Merino </h3>
+                    <p class="item-description"> Azul </p>
+                    <p class="item-description"> 20.00 €</p>
+                </div>
     
+                <ion-icon class="dislike-button" name="heart" (click)="removerFavorito('produto1')"></ion-icon>
+    
+            </div>
+
+        </div>
+
+        <div id="produto2" class="container-content">
+        
+            <ion-card>
+                <img src="assets/img/clothes/body_merino_rosa.webp" />
+            </ion-card>
+            
+            <div style="display: flex;">
+                <div class="item-box">
+                    <h3 class="item-name"> Body Merino </h3>
+                    <p class="item-description"> Rosa </p>
+                    <p class="item-description"> 20.00 €</p>
+                </div>
+    
+                <ion-icon class="dislike-button" name="heart" (click)="removerFavorito('produto2')"></ion-icon>
+
+            </div>
+
+        </div>
+        
+    </div>
 
 </ion-content>

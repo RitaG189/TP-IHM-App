@@ -44,10 +44,11 @@ hr {
 .input {
 
     // body
-    --background: #F3E8DE;
-    border: 2px solid #ede1d7;
+    background: #FFF7EF;
+    border: 1px solid #F3E8DE;
     width: 75%;
-    border-radius: 10pt;
+    height: 40px;
+    border-radius: 10px;
     text-align: left;
     margin-top: 5%;
     margin-left: auto;
@@ -61,6 +62,7 @@ hr {
     // body
     margin-top: 10px;
     margin-left: 8%;
+    --ripple-color: transparent;
     
 }
 
@@ -90,4 +92,8 @@ hr {
 
 ion-toolbar {
     --background: transparent;
+}
+
+.toast {
+    margin-bottom: 20px;
 }

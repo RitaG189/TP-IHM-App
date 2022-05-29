@@ -21,3 +21,62 @@ hr {
     margin-right: auto;
     margin-top: 8%;
 }
+
+// --- body ---
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 46%);
+    justify-content: space-evenly;
+}
+
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+}
+
+ion-card {
+    border: 2px solid #F3E8DE;
+    --ion-background-color: #FFF7EF;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+    height: 280;
+  }
+
+.item-box {
+    width: 100%;
+}
+
+.item-name {
+  font-family: 'Nunito-SemiBold';
+  font-size: 12px;
+  text-align: left;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-description {
+  text-align: left;
+  font-family: 'Nunito-Medium';
+  color: #676767;
+  font-size: 12px;
+  padding-left: 10pt;
+  text-transform: capitalize;
+}
+
+#container {  
+    text-align: right;
+    color: #FFF7EF;  
+}
+
+.dislike-button {
+    margin-top: 15px;
+    margin-right: 10px;
+    color: rgb(250, 146, 163);
+}

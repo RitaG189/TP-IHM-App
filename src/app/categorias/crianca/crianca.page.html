@@ -19,17 +19,7 @@
     </p>
 
     <hr/>
-
-    <ion-buttons>
-      <ion-button>
-        <ion-icon name="funnel-outline"></ion-icon>
-        <p class="header-description">Filtro</p>
-      </ion-button>
-      <ion-button>
-        <ion-icon name="filter-outline"></ion-icon>
-        <p class="header-description">Ordenar</p>
-      </ion-button>
-    </ion-buttons>
+    
   </div>
 
 
@@ -37,7 +27,7 @@
     <ng-container *ngFor="let product of dataProducts | keyvalue">
       <ng-container *ngIf="product.value.age === 'infant' || product.value.age == 'all'">
         
-        <div class="container-content">
+        <div class="container-content" (click)="verProduto(product.key)">
         
           <ion-card>
             <img src="{{ product.value.image }}" />
@@ -55,4 +45,11 @@
     </ng-container>
   </div>
 
+
+  <ion-fab slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="options-outline"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab>
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-seguranca',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SegurancaPage implements OnInit {
 
-  constructor() { }
+  constructor(private alertController: AlertController) { }
 
   ngOnInit() {
+  }
+
+  alterarPassword() {
+
+    this.alertController.create({
+      header: 'Alteração de Password',
+      message: 'A password foi alterada com sucesso!',
+      buttons: ['OK']
+    }).then(res => {
+
+      res.present();
+
+    });
+
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-novidades',
@@ -9,7 +10,7 @@ export class NovidadesPage implements OnInit {
 
   public dataProducts: any;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     fetch('./assets/data/clothes.json')
@@ -20,5 +21,18 @@ export class NovidadesPage implements OnInit {
       
   }
 
+  verProduto(produtoID: string) {
+    
+    let infoProduto: NavigationExtras;
+
+    infoProduto = {
+      state: {
+        dadosProduto: this.dataProducts[produtoID]
+      }
+    }
+
+    this.router.navigate(['/pagina-produto'], infoProduto)
+    
+  }
   
 }

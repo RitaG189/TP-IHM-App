@@ -109,3 +109,20 @@ ion-card {
   padding-left: 10pt;
   text-transform: capitalize;
 }
+
+ion-fab {
+    bottom: 20px;
+    left: 20px;
+    
+}
+
+ion-fab-button {
+    --background: #676767;
+    --ripple-color: transparent;
+    --box-shadow: none;
+    
+}
+
+ion-icon {
+    margin: auto;
+}

@@ -1,67 +1,62 @@
 
 
-<ion-content fullscreen="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inscrição no Exame</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-  <div id="header">
-
-    
-    <button id="back-button" onclick="history.back()">
-      <ion-icon name="chevron-back-outline"></ion-icon>
-    </button>
-
-  
-    <ion-title >
-      Criar Conta
-    </ion-title>
-  </div>
-
-
-
-  <hr/>
-
-  <p class="label">Nome</p>
-  <ion-input class="input" required type="text"></ion-input>
-
-  <p class="label">Apelido</p>
-  <ion-input class="input" required type="text"></ion-input>
-
-  <p class="label">Nome de Utilizador</p>
-  <ion-input class="input"></ion-input>
-
-  <p class="label">Email</p>
-  <ion-input class="input"></ion-input>
-
-  <p class="label">Password</p>
-  <ion-input class="input"></ion-input>
-
-  
-  <ion-list lines="none">
-
-    <ion-item class="checkboxes">
-      <ion-checkbox color="lightgrey"></ion-checkbox>
-      <ion-label class="checkbox-label">Subscrever a TugaKidsClothes newsletter</ion-label>
+<ion-content>
+  <form [formGroup]="IHMForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item lines="full">
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" formControlName="nome" required></ion-input>
     </ion-item>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.nome.errors?.required">
+      Nome é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.nome.errors?.minlength">
+      Nome deverá ter pelo menos 2 caracteres
+    </ion-text>
 
-    <ion-item class="checkboxes">
-      <ion-checkbox color="lightgrey"></ion-checkbox>
-      <ion-label class="checkbox-label">Li e aceito a <u>Política de Privacidade</u></ion-label>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input>
     </ion-item>
-    
-  </ion-list>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.email.errors?.required">
+      Email é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.email.errors?.pattern">
+      Email inválido
+    </ion-text>
 
-  <div style="text-align: center;">
-    <ion-button class="button" color="lightgrey" routerLink="/tab5" routerDirection="forward">
-        <p>Criar Conta</p> 
+    <!-- Radio buttons -->
+    <ion-radio-group formControlName="curso" lines="full">
+      <ion-list-header>
+        <ion-label>Curso</ion-label>
+      </ion-list-header>
 
-        <!-- Colocar dados input em ficheiro -->
+      <ion-item>
+        <ion-label class="ion-text-wrap">Engenharia de Computação Gráfica e Multimédia</ion-label>
+        <ion-radio slot="start" value="ecgm"></ion-radio>
+      </ion-item>
 
-    </ion-button>
-  </div>
+      <ion-item>
+        <ion-label>Engenharia Informática</ion-label>
+        <ion-radio slot="start" value="ei"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.curso.errors?.required">
+      Curso é de seleção obrigatória
+    </ion-text>
 
-
-
-  
-
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Enviar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>
-
-

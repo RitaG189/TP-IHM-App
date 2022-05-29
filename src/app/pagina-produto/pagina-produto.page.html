@@ -1,5 +1,5 @@
 
-<ion-content >
+<ion-content *ngIf="infoProduto">
 
   <div id="header">
   
@@ -7,22 +7,27 @@
       <ion-icon name="chevron-back-outline"></ion-icon>
     </button>
 
-    <button id="heart-button">
-      <ion-icon name="heart-outline"></ion-icon>
-    </button>
+    <div>
+      <button id="heart-button" (click)="favorite()">
+        <ion-icon name="heart-outline"></ion-icon>
+      </button>
+  
+      <button id="dislike-button" (click)="favorite()">
+        <ion-icon name="heart-dislike-outline"></ion-icon>
+      </button>
+    </div>
+
 
   </div>
 
-  <!-- *ngIf="infoProduto" -->
-
+  
   <div style="text-align:center;">
-    <!-- <img src="{{ infoProduto.image }}" /> -->
-    <img id="product-image" src="assets/img/clothes/body_merino_azul.webp" />
+    <img id="product-image" src="{{ infoProduto.image }}" />
   </div>
 
   <div id="product-info">
 
-    <h1 id="product-title"> Body de Merino</h1>
+    <h1 id="product-title">{{infoProduto.name}}</h1>
 
     <p id="product-description">
       Este casaco com fecho possui dois bolsos. É perfeito como um casaco de camada média 
@@ -30,28 +35,58 @@
       quando se está fora de casa.
     </p>
 
-    <h2 id="price"> 20.00 </h2>
+    <h2 id="price"> {{infoProduto.price }} € </h2>
 
     <div style="margin: auto;">
 
-      <h2 id="color"> COR: Verde </h2>
+      <h2 id="color"> COR: {{infoProduto.color}} </h2>
+
+      <div style="display: flex; align-items: center;">
+
+        <h2 id="size"> Tamanho: </h2>
+
+        <ion-item lines="none">
+        
+          
+          <ion-select interface="popover" style="width: 2000px;">
+            <ion-label>Selecionar tamanho</ion-label>
+    
+            <div id="size-button-newborn" *ngIf="infoProduto.age === 'newborn&baby' || infoProduto.age === 'newborn' || infoProduto.age === 'all'"> 
+              <ion-select-option>Prematuro</ion-select-option>
+              <ion-select-option>Recém-Nascido</ion-select-option>
+              <ion-select-option>0 - 3 Meses</ion-select-option>
+              <ion-select-option>3 - 6 Meses</ion-select-option>
+            </div>
+    
+            <div id="size-button-baby" *ngIf="infoProduto.age === 'newborn&baby' || infoProduto.age === 'baby' || infoProduto.age === 'all' "> 
+              <ion-select-option>6 - 9 Meses</ion-select-option>
+              <ion-select-option>9 - 12 Meses</ion-select-option>
+              <ion-select-option>12 - 18 Meses</ion-select-option>
+              <ion-select-option>18 - 24 Meses</ion-select-option>
+            </div>
+    
+            <div id="size-button-infant" *ngIf="infoProduto.age === 'infant' || infoProduto.age === 'all'"> 
+              <ion-select-option>2 Anos</ion-select-option>
+              <ion-select-option>4 Anos</ion-select-option>
+              <ion-select-option>6 Anos</ion-select-option>
+              <ion-select-option>8 Anos</ion-select-option>
+              <ion-select-option>10 Anos</ion-select-option>
+            </div>
+    
+          </ion-select>
+        </ion-item>
+      </div>
 
 
-
-      <h2 id="size"> Tamanho: </h2>
     
     </div>
 
-    <div id="size-button-group">
-      <ion-button class="size-button"> 0 - 3 m </ion-button>
-      <ion-button class="size-button"> 3 - 6 m </ion-button>
-      <ion-button class="size-button"> 6 - 12 m </ion-button>
-    </div>
+    
 
   </div>
 
     <ion-buttons style="padding: 20px 0;">
-      <ion-button class="general-button">Adicionar ao Cesto</ion-button>
+      <ion-button class="general-button" (click)="adicionarProduto()">Adicionar ao Cesto</ion-button>
     </ion-buttons>
 
     <hr />
@@ -65,16 +100,16 @@
 
   <hr />
 
-  <h1>Classificações</h1>
+  <h1 id="classificacao-title">Classificações</h1>
 
   <!-- Estrelas -->
 
-  <h3> 0 / 5 </h3>
+  <h3 id="classificacao"> 0 / 5 </h3>
 
-  <p>Ainda não existe nenhuma classificação.</p>
+  <p id="classificacao-subtitle">Ainda não existe nenhuma classificação.</p>
 
   <ion-buttons>
-    <ion-button class="general-button">Classificar</ion-button>
+    <ion-button class="general-button" style="margin-bottom: 20px;">Classificar</ion-button>
   </ion-buttons>
   
 
@@ -83,3 +118,4 @@
 
 
 </ion-content>
+

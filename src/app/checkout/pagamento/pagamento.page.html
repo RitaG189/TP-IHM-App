@@ -1,9 +1,58 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>pagamento</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
+
+  <div id="header">
+
+    <h1 id="conta">Pagamento</h1>
+  
+  </div>
+
+  <hr />
+
+  <h2>Entrega em</h2>
+
+  <ion-radio-group>
+    <div id="entrega-casa">
+
+      <div style="display: flex; align-items: center;"> 
+        <ion-radio></ion-radio>
+        <h2 class="title">Casa</h2>
+      </div>
+
+  
+      <div style="display: flex;">
+        <p class="text">::nome::</p>
+        <p class="text">::numTel::</p>
+      </div>
+
+
+
+
+      <div style="display: flex; flex-wrap: wrap; gap: 100px;">
+        <p class="text">::rua::</p>
+        <p class="text">::cidade::</p>
+        <p class="text">::codPostal::</p>
+        <p class="text">::distrito::</p>
+        <p class="text">::pais::</p>
+      </div>
+
+
+  
+    </div>
+  
+    <div id="entrega-loja">
+
+      <ion-radio></ion-radio>
+      <h2>Loja A</h2>
+  
+    </div>
+  </ion-radio-group>
+
+  <div style="display: flex; text-align: center; margin: auto;">
+    <ion-button class="general-button" > Continuar </ion-button>
+    <ion-button class="general-button" > Cancelar </ion-button>
+  </div>
+
+
 
 </ion-content>

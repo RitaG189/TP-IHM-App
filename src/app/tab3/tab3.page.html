@@ -4,10 +4,10 @@
   <div id="header">
 
     <ion-label id="cesto">Cesto</ion-label>
-    <ion-badge id="total-items" color="light"> 0 </ion-badge>
+    <ion-badge id="total-items" color="light"> 1 </ion-badge>
 
     <div id="total-box">
-      <ion-label id="total"> 0.00€ </ion-label>
+      <ion-label id="total"> 23.50€ </ion-label>
       <ion-label id="total-info">IVA incluído</ion-label>
     </div>
 
@@ -16,14 +16,110 @@
 
   <hr/>
 
-  <img src="assets/icon/sad-bunny.png" id="bunny" />
+  <div id="item" >
 
-  <div class="container">
+    <ion-card class="item-card">
+      <img src="assets/img/clothes/body_merino_azul.webp" />
+    </ion-card>
 
-    <h1 id="bunny-title">Ups! O cesto está vazio</h1>
-    <p id="bunny-text">Adiciona primeiro um item ao cesto para prosseguires com a compra</p> 
+    <div style="width: 45%;">
+      
+      <h2 class="title">Body de Merino</h2>
+      <h2 class="item-price">20.00 €</h2>
+
+        <div style="display: flex;">
+          <h3 class="item-text">Tamanho:</h3>
+          <h3 class="item-text2">6 - 12 M</h3>
+        </div>
+        
+        <div style="display: flex;">
+          <h3 class="item-text">Cor:</h3>
+          <h3 class="item-text2">Azul</h3>
+        </div>
+        
+        <div style="display: flex;">
+          <h3 class="item-text">Quantidade:</h3>
+          <h3 class="item-text2">1</h3>
+        </div>
+
+    </div>
+
   </div>
- 
+
+  <hr/>
+
+    <div style="margin: 20px; margin-left: 30px; margin-right: 150px; text-align: left;">
+
+      <ion-accordion-group>
+        <ion-accordion>
+
+          <ion-item slot="header">
+            <h2 id="codigo-title"><u>Adicionar Cupão</u></h2> 
+          </ion-item>
+
+          <ion-list slot="content">
+            <ion-item lines="none">
+
+              <div>
+                <p id="codigo-subtitle">Código:</p>
+                <ion-input id="codigo-input"></ion-input>
+              </div>
+
+            </ion-item>
+          </ion-list>
+
+        </ion-accordion>
+      </ion-accordion-group>
+
+    </div>
+
+
+    <div style="margin: 0 45px;">
+      <div style="display: flex; justify-content: space-between;">
+        <h3 class="custos-text">Custos de Envio</h3>
+        <h3 class="custos-text">3.50 €</h3>
+      </div>
+  
+      <div style="display: flex; justify-content: space-between;">
+        <h2 class="total-text">Total</h2>
+        <h2 class="total-text">23.50 €</h2>
+      </div>
+    </div>
+
+  <hr/>
+
+  <h2 id="title-end">Aceitamos</h2>
+
+  <div style="margin-bottom: 20px;">
+    <ion-grid>
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <img src="assets/icon/logos/mastercard.png" height="20px"/>
+        </ion-col>
+        <ion-col>
+          <img src="assets/icon/logos/visa.png" height="20px"/>
+        </ion-col>
+        <ion-col>
+          <img src="assets/icon/logos/mbway.png" height="20px"/>
+        </ion-col>
+      </ion-row>
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <img src="assets/icon/logos/multibanco.png" height="20px"/>
+        </ion-col>
+        <ion-col>
+          <img src="assets/icon/logos/paypal.png" height="20px"/>
+        </ion-col>
+        <ion-col>
+          <img src="assets/icon/logos/gpay.png" height="20px"/>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 
 </ion-content>
+
+<ion-footer>
+  <ion-button class="general-button" routerLink="/pagamento">Pagamento</ion-button>
+</ion-footer>

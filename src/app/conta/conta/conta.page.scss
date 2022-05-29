@@ -1,4 +1,4 @@
-// header
+// --- header ---
 
 #header {
     padding: 2% 0;
@@ -40,20 +40,22 @@ hr {
 
 .info {
     font-family: 'Solway-Medium';
-    font-size: 12px;
+    font-size: 14px;
     color: #363636;
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 .info-cliente {
     font-family: 'Nunito-Medium';
-    font-size: 12px;
+    font-size: 14px;
     color: #363636;
     text-align: right;
+    margin: 20px 0;
 }
 
 h2 {
     font-family: 'Solway-Bold';
-    font-size: 16pt;
-    color: #363636;  
+    font-size: 18px;
+    color: #363636;
+    margin-bottom: 10px;  
 }

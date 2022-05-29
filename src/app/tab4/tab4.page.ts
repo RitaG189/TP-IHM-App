@@ -12,4 +12,9 @@ export class Tab4Page implements OnInit {
   ngOnInit() {
   }
 
+  removerFavorito(produto: string) {
+    
+    document.getElementById(produto).style.display = "none";
+  }
+
 }

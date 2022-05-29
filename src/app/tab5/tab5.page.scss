@@ -58,7 +58,7 @@
     margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
-        font-family: 'Nunito-Bold';
+    font-family: 'Nunito-Bold';
 }
 
 .forget-password {
@@ -86,6 +86,9 @@
     color: #363636;
 }
 
+#username-incorreto {
+    display: none;
+}
 
 // pagina 2
 
@@ -156,3 +159,5 @@ ion-title {
     font-size: 16px;
     color:#363636;
 }
+
+

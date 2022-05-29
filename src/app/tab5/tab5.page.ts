@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AlertController, ToastController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-tab5',
@@ -9,8 +11,10 @@ export class Tab5Page implements OnInit {
 
   public dataProducts: any;
   public accountLogin: boolean = false;
+  
 
-  constructor() { }
+  constructor(public alertController: AlertController, private toastController: ToastController) { 
+  }
 
   ngOnInit(): void {
     fetch('./assets/data/clothes.json')
@@ -33,12 +37,46 @@ export class Tab5Page implements OnInit {
       
     } else {
       document.getElementById("profile").style.display = "none";
+
+      this.toastController.create({
+        message: 'Nome de utilizador ou password incorretos',
+        duration: 2000,
+        position: 'top',
+        animated: true,
+        cssClass: 'toast',      
+  
+      }).then(res => {
+  
+        res.present();
+  
+      });
     }
   }
 
   logout() {
-    document.getElementById("profile").style.display = "none";
-    document.getElementById("login").style.display = "";
+    this.alertController.create({
+      header: 'Sair da Conta',
+      message: 'Tens a certeza que queres sair da conta?',
+      buttons: [
+        {
+          text: 'Não',
+          handler: () => {
+            
+          }
+        },
+        {
+          text: 'Sim',
+          handler: () => {
+            document.getElementById("profile").style.display = "none"
+            document.getElementById("login").style.display = "" 
+          }
+        }
+      ]
+    }).then(res => {
+
+      res.present();
+
+    });
 
   }
 

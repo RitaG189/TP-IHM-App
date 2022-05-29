@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-bebe',
@@ -23,9 +24,18 @@ export class BebePage implements OnInit {
       })
   }
 
-  // verProduto(produtoID: string) {
-  //   this.router.navigate(['pagina-produto'], produtoID)
+  verProduto(produtoID: string) {
+    
+    let infoProduto: NavigationExtras;
 
-  // }
+    infoProduto = {
+      state: {
+        dadosProduto: this.dataProducts[produtoID]
+      }
+    }
+
+    this.router.navigate(['/pagina-produto'], infoProduto)
+    
+  }
 
 }
