@@ -1,0 +1,71 @@
+// --- header ---
+
+#header {
+    margin: 8% 0;
+    text-align: center;
+
+}
+
+#confirmacao-pagamento {
+    font-family: 'Solway-Medium';
+    font-size: 18px;
+    color: #363636;
+
+}
+
+
+hr {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border-top: 4px solid #F4ECE4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// --- body ---
+
+h1 {
+    font-family: 'Solway-Bold';
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'Nunito-Medium';
+    font-size: 14px;
+}
+
+.bold {
+    font-family: 'Nunito-Bold';
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Solway-Bold';
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Nunito-Medium';
+    font-size: 12px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.general-button {
+    --background: #676767;
+    --border-radius: 10px;
+    font-family: 'Nunito-Medium';
+    margin-bottom: 20px;
+    width: 40%;
+}

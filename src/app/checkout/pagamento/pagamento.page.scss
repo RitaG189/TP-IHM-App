@@ -2,15 +2,25 @@
 
 #header {
     margin: 6% 0;
-    text-align: center;
+    text-align: left;
     display: flex;
 }
 
-#conta {
+#pagamento {
     font-family: 'Solway-Medium';
     font-size: 18pt;
     color: #363636;
-    margin: auto;
+    margin-left: 8%;
+}
+
+#back-button {
+    background: transparent;
+    color: #363636;
+    font-size: 20px;
+    --box-shadow: none;
+    width: 20%;
+    margin-top: 4%;
+    margin-left: 4%;
 }
 
 hr {
@@ -21,6 +31,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+
+// --- body ---
 
 #entrega-casa {
     border: 3px solid #676767;
@@ -41,8 +53,15 @@ hr {
 }
 
 .title {
-    font-family: 'Nunito-Medium';
-    font-size: 14px;
+    font-family: 'Solway-Medium';
+    font-size: 16px;
+    padding: 20px 40px;
+}
+
+.title2 {
+    font-family: 'Solway-Medium';
+    font-size: 16px;
+    margin: auto;
 }
 
 .text {
@@ -56,5 +75,48 @@ hr {
     --border-radius: 10px;
     font-family: 'Nunito-Medium';
     margin-bottom: 20px;
-    width: 30%;
+    width: 40%;
+}
+
+.pagamento-box {
+
+    border: 3px solid #676767;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 220px;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.pagamento-title {
+    font-family: 'Solway-Medium';
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Nunito-Medium'; 
+    font-size: 12px;
+}
+
+.endereco-button {
+    --background: white;
+    border: 2px solid #676767;
+    color: #363636;
+    border-radius: 10px;
+    --box-shadow: none;
+    font-family: 'Nunito-Medium';
+    font-size: 12px;
+    height: 30px;
+    padding: 4px 6px;
+}
+
+ion-radio {
+    --color: #676767;
+    --color-checked: #676767;
+    margin-right: 10px ;
+}
+
+.metodo-pagamento {
+    margin: 10% 0;
 }

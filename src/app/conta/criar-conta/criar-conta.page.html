@@ -1,62 +1,146 @@
 
-
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Inscrição no Exame</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <form [formGroup]="IHMForm" (ngSubmit)="submitForm()" novalidate>
-    <ion-item lines="full">
-      <ion-label position="floating">Nome</ion-label>
-      <ion-input type="text" formControlName="nome" required></ion-input>
+
+  <div id="header">
+
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
+    <ion-title>Criar Conta</ion-title>
+
+  </div>
+
+  <hr/>
+
+  <form [formGroup]="contaForm" (ngSubmit)="submitForm()">
+    
+    <ion-item lines="none">
+      <ion-label class="label" position="floating">Nome</ion-label>
+      <ion-input class="input" type="text" formControlName="nome" required></ion-input>
     </ion-item>
-    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.nome.errors?.required">
-      Nome é de preenchimento obrigatório
-    </ion-text>
-    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.nome.errors?.minlength">
-      Nome deverá ter pelo menos 2 caracteres
-    </ion-text>
+    
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.nome.errors?.required">
+        O nome é de preenchimento obrigatório
+      </ion-text>
+    </div>
 
-    <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="email" formControlName="email" required></ion-input>
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.nome.errors?.minlength">
+        O nome deverá ter pelo menos 2 caracteres
+      </ion-text>
+    </div>
+
+    <ion-item lines="none">
+      <ion-label class="label" position="floating">Apelido</ion-label>
+      <ion-input class="input" type="text" formControlName="apelido" required></ion-input>
     </ion-item>
-    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.email.errors?.required">
-      Email é de preenchimento obrigatório
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.apelido.errors?.required">
+        O apelido é de preenchimento obrigatório
+      </ion-text>
+    </div>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.apelido.errors?.minlength">
+        O apelido deverá ter pelo menos 2 caracteres
+      </ion-text>
+    </div>
+
+    <ion-item lines="none">
+      <ion-label class="label" position="floating">Nome de Utilizador</ion-label>
+      <ion-input class="input" type="text" formControlName="username" required></ion-input>
+    </ion-item>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.username.errors?.required">
+        Campo de preenchimento obrigatório
+      </ion-text>
+    </div>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.username.errors?.minlength">
+        O nome de utilizador deverá ter pelo menos 4 caracteres
+      </ion-text>
+    </div>
+
+    <ion-item lines="none" >
+      <ion-label class="label" position="floating">Email</ion-label>
+      <ion-input class="input" type="email" formControlName="email" required></ion-input>
+    </ion-item>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.email.errors?.required">
+        O email é de preenchimento obrigatório
+      </ion-text>
+    </div>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.email.errors?.pattern">
+        Email inválido
+      </ion-text>
+    </div>
+
+
+
+    <ion-item lines="none" >
+      <ion-label class="label" position="floating">Password</ion-label>
+      <ion-input class="input" type="password" formControlName="password" required></ion-input>
+    </ion-item>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.password.errors?.required">
+        A password é de preenchimento obrigatório
+      </ion-text>
+    </div>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.password.errors?.minlength">
+        A password deverá ter pelo menos 8 caracteres
+      </ion-text>
+    </div>
+
+
+
+    <ion-item lines="none">
+      <ion-label class="label" position="floating">Contacto</ion-label>
+      <ion-input class="input" type="text" formControlName="contacto" required></ion-input>
+    </ion-item>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.contacto.errors?.required">
+        O contacto é de preenchimento obrigatório
+      </ion-text>
+    </div>
+
+    <div style="height: 1px;">
+      <ion-text class="ion-padding warning" color="danger" *ngIf="isSubmited && formControls.contacto.errors?.minlength">
+        O contacto deverá ter pelo menos 9 números
+      </ion-text>
+    </div>
+
+
+    <!-- Checkboxes -->
+
+    <div style="margin-top: 30px;">
+      <ion-checkbox class="checkboxes"></ion-checkbox>
+      <ion-label class="checkbox-label">Subscrever à TugaKidsClothes newsletter</ion-label>
+    </div>
+    <div>
+      <ion-checkbox class="checkboxes" formControlName="pp"></ion-checkbox>
+      <ion-label class="checkbox-label">Li e aceito a <u>Política de Privacidade</u></ion-label>
+    </div>
+
+
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.pp.errors?.required">
+      Campo obrigatório
     </ion-text>
-    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.email.errors?.pattern">
-      Email inválido
-    </ion-text>
 
-    <!-- Radio buttons -->
-    <ion-radio-group formControlName="curso" lines="full">
-      <ion-list-header>
-        <ion-label>Curso</ion-label>
-      </ion-list-header>
+    
+    <ion-button class="button" type="submit" expand="block">Enviar</ion-button>
+    
 
-      <ion-item>
-        <ion-label class="ion-text-wrap">Engenharia de Computação Gráfica e Multimédia</ion-label>
-        <ion-radio slot="start" value="ecgm"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Engenharia Informática</ion-label>
-        <ion-radio slot="start" value="ei"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls.curso.errors?.required">
-      Curso é de seleção obrigatória
-    </ion-text>
-
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Enviar</ion-button>
-      </ion-col>
-    </ion-row>
   </form>
 </ion-content>

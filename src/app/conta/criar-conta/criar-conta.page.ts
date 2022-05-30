@@ -11,22 +11,22 @@ import { ToastController } from '@ionic/angular';
 export class CriarContaPage implements OnInit{
 
   contaForm: FormGroup;
-  isSubmited: boolean = false;
+  isSubmited: boolean;
 
   constructor(private toastController: ToastController, private router: Router, private fb: FormBuilder) { 
+    this.isSubmited = false;
   }
 
   ngOnInit() {
     this.contaForm = this.fb.group({
       nome: ['', [Validators.required, Validators.minLength(2)]],
       apelido: ['', [Validators.required, Validators.minLength(2)]],
-      username: ['',[Validators.required]],
-      password: ['', [Validators.required]],
+      username: ['', [Validators.required, Validators.minLength(4)]],
       email: ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
-      contacto: ['', [Validators.required]]
-    });
-
-    this.contaForm.valueChanges.subscribe(data => console.log(data))
+      password: ['', [Validators.required, Validators.minLength(8)]],
+      contacto: ['', [Validators.required, Validators.minLength(9)]],
+      pp: ['', [Validators.required]]
+   });
   }
 
 
@@ -35,29 +35,25 @@ export class CriarContaPage implements OnInit{
     if (!this.contaForm.valid) {
       return false;
     } else {
-      console.log(this.contaForm.value);
+      this.router.navigate(['/tabs/tab5'])
+
+      this.toastController.create({
+        message: 'Conta criada com sucesso.',
+        duration: 2000,
+        position: 'top',
+        animated: true,
+        cssClass: 'toast'
+  
+      }).then(res => {
+  
+        res.present();
+  
+      });
     }
   }
 
-
-
-  criarConta() {
-
-    this.router.navigate(['/tabs/tab5'])
-
-    this.toastController.create({
-      message: 'Conta criada com sucesso.',
-      duration: 2000,
-      position: 'top',
-      animated: true,
-      cssClass: 'toast'
-
-    }).then(res => {
-
-      res.present();
-
-    });
+  get formControls() { 
+    return this.contaForm.controls;
   }
-
 
 }

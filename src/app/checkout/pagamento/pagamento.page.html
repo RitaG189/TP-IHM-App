@@ -3,56 +3,159 @@
 
   <div id="header">
 
-    <h1 id="conta">Pagamento</h1>
+    <button id="back-button" onclick="history.back()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+
+
+    <h1 id="pagamento">Pagamento</h1>
   
   </div>
 
   <hr />
 
-  <h2>Entrega em</h2>
+  <h2 class="title">Entrega em:</h2>
 
   <ion-radio-group>
-    <div id="entrega-casa">
 
-      <div style="display: flex; align-items: center;"> 
-        <ion-radio></ion-radio>
-        <h2 class="title">Casa</h2>
-      </div>
-
+    <div class="pagamento-box"> 
+       
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <h2 class="pagamento-title"> Casa </h2>
+          <p> Aluno EI</p>
+          <p> 001 002 003 </p>
+          <p> 4900-001 </p>
+        </div>
   
-      <div style="display: flex;">
-        <p class="text">::nome::</p>
-        <p class="text">::numTel::</p>
+        <div style="text-align: right;">
+          <ion-radio style="margin: 20px 6px;"></ion-radio>
+          <p class="endereco-button">Trocar endereço</p>
+        </div>
       </div>
 
 
+      <div style="display: flex; justify-content: space-between;">  
+        
+        <div>
+          <p> Rua X </p>
+          <p> 4900-001 </p>
+        </div>
 
+        <div>
+          <p> Viana do Castelo </p>
+          <p> Portugal </p>
+        </div>
+        
 
-      <div style="display: flex; flex-wrap: wrap; gap: 100px;">
-        <p class="text">::rua::</p>
-        <p class="text">::cidade::</p>
-        <p class="text">::codPostal::</p>
-        <p class="text">::distrito::</p>
-        <p class="text">::pais::</p>
       </div>
-
-
   
     </div>
-  
-    <div id="entrega-loja">
 
-      <ion-radio></ion-radio>
-      <h2>Loja A</h2>
+    <div class="pagamento-box"> 
+       
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <h2 class="pagamento-title"> Loja A </h2>
+          <p> Aluno EI</p>
+          <p> 001 002 003 </p>
+          <p> 4900-001 </p>
+        </div>
   
+        <div style="text-align: right;">
+          <ion-radio style="margin: 20px 6px;"></ion-radio>
+          <p class="endereco-button">Trocar loja</p>
+        </div>
+      </div>
+
+
+      <div style="display: flex; justify-content: space-between;">  
+        
+        <div>
+          <p> Rua A, 1 </p>
+          <p> 4900-001 </p>
+        </div>
+
+        <div>
+          <p> Viana do Castelo </p>
+          <p> Portugal </p>
+        </div>
+        
+      </div>
     </div>
+
   </ion-radio-group>
 
-  <div style="display: flex; text-align: center; margin: auto;">
-    <ion-button class="general-button" > Continuar </ion-button>
-    <ion-button class="general-button" > Cancelar </ion-button>
+  <hr/>
+
+  <div style="margin: 10% 20%;">
+    <h2 class="title2">Endereço de Faturação</h2>
+
+    <ion-radio-group >
+  
+      <div style="display: flex; align-items:center; margin: 5% 0;">
+        <ion-radio></ion-radio>
+        <label class="text">Igual a endereço de entrega</label>
+      </div>
+  
+      <div style="display: flex; align-items:center; margin: 5% 0;">
+        <ion-radio></ion-radio>
+        <label class="text">Introduzir endereço de faturação</label>
+      </div>
+  
+    </ion-radio-group>
+  </div>
+
+  <hr/>
+
+  <div style="margin: 10% 10%;">
+
+    <div style="display: flex;">
+      <h2 class="title2">Valor total</h2>
+      <h2 class="title2">23.50 €</h2>
+    </div>
+
+    <div style="margin: 10% 0; text-align: center;">
+      <h2 class="title2 metodo-pagamento">Escolher Método de Pagamento</h2>
+  
+      <div >
+        <ion-grid>
+          <ion-row style="text-align: center;">
+            <ion-col>
+              <img src="assets/icon/logos/mastercard.png" height="20px"/>
+            </ion-col>
+            <ion-col>
+              <img src="assets/icon/logos/visa.png" height="20px"/>
+            </ion-col>
+            <ion-col>
+              <img src="assets/icon/logos/mbway.png" height="20px"/>
+            </ion-col>
+          </ion-row>
+          <ion-row style="text-align: center;">
+            <ion-col>
+              <img src="assets/icon/logos/multibanco.png" height="20px"/>
+            </ion-col>
+            <ion-col>
+              <img src="assets/icon/logos/paypal.png" height="20px"/>
+            </ion-col>
+            <ion-col>
+              <img src="assets/icon/logos/gpay.png" height="20px"/>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </div>
+
+    </div>
+  
+   
+    
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <ion-button class="general-button" routerLink="/pagamento-confirmacao"> Pagamento </ion-button>
   </div>
 
 
-
 </ion-content>
+

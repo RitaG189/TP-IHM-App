@@ -55,10 +55,6 @@ const routes: Routes = [
     loadChildren: () => import('./checkout/pagamento/pagamento.module').then( m => m.PagamentoPageModule)
   },
   {
-    path: 'confirmacao',
-    loadChildren: () => import('./checkout/confirmacao/confirmacao.module').then( m => m.ConfirmacaoPageModule)
-  },
-  {
     path: 'pagina-produto',
     loadChildren: () => import('./pagina-produto/pagina-produto.module').then( m => m.PaginaProdutoPageModule)
   },
@@ -69,6 +65,10 @@ const routes: Routes = [
   {
     path: 'confirmacao-reserva',
     loadChildren: () => import('./reserva/confirmacao-reserva/confirmacao-reserva.module').then( m => m.ConfirmacaoReservaPageModule)
+  },
+  {
+    path: 'pagamento-confirmacao',
+    loadChildren: () => import('./checkout/pagamento-confirmacao/pagamento-confirmacao.module').then( m => m.PagamentoConfirmacaoPageModule)
   }
 
 

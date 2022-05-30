@@ -1,3 +1,4 @@
+
 #header {
     display: flex;
     align-items: center;
@@ -30,15 +31,11 @@ hr {
 }
 
 .label {
-    // body
     text-align: left;
-    margin-top: 8%;
-    margin-left: 18%;
-
-    // font
+    margin-left: 10%;
+    margin-bottom: 20px;
     font-family: 'Nunito-Bold';
     font-size: 12pt;
-    color: #363636;
 }
 
 .input {
@@ -46,7 +43,9 @@ hr {
     // body
     background: #FFF7EF;
     border: 1px solid #F3E8DE;
-    width: 75%;
+    width: 90%;
+    --padding-start: 10px;
+    --padding-end: 10px;
     height: 40px;
     border-radius: 10px;
     text-align: left;
@@ -56,13 +55,21 @@ hr {
 
     // font
     font-family: 'Nunito-Bold';
+    
+}
+
+ion-item.item-has-focus > ion-label {
+    color: black !important;
 }
 
 .checkboxes {
     // body
     margin-top: 10px;
-    margin-left: 8%;
+    margin-left: 10%;
     --ripple-color: transparent;
+    --background-checked: #676767;
+    --border-color: #676767;
+    --border-color-checked: #676767;
     
 }
 
@@ -77,13 +84,12 @@ hr {
 }
 
 .button {
-
-    // body
-    margin-bottom: 10%;
+    margin: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    --background: #676767;
     --ripple-color: transparent;
     --border-radius: 10pt;
-
-    // font
     font-family: 'Nunito-SemiBold';
     font-size: 10pt;
     width: 40%;
@@ -96,4 +102,15 @@ ion-toolbar {
 
 .toast {
     margin-bottom: 20px;
+}
+
+ion-item {
+    margin: 20px 0;
+}
+
+.warning {
+    font-family: 'Nunito-Medium';
+    font-size: 12px;
+    height: 20px;
+    margin-left: 25px;
 }
